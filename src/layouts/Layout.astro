@@ -9,23 +9,78 @@ interface Props {
 	keywords?: string;
 	canonicalUrl?: string;
 	breadcrumbs?: { label: string; href?: string }[];
+	structuredData?: any[];
+	socialMetaTags?: Record<string, string>;
+	imageUrl?: string;
 }
 
-const { title, description, keywords, canonicalUrl, breadcrumbs } = Astro.props;
-const siteName = "ChipFindr"; // Updated site name
+const { 
+	title, 
+	description, 
+	keywords, 
+	canonicalUrl, 
+	breadcrumbs, 
+	structuredData = [],
+	socialMetaTags = {},
+	imageUrl 
+} = Astro.props;
+
+const siteName = "ChipFindr";
+const fullTitle = `${title} - ${siteName}`;
+const siteUrl = Astro.url.origin;
+
+// Default social meta tags
+const defaultSocialTags = {
+	'og:title': fullTitle,
+	'og:description': description || `Find the best fish & chip shops across the UK with ${siteName}`,
+	'og:url': canonicalUrl || Astro.url.href,
+	'og:type': 'website',
+	'og:site_name': siteName,
+	'og:image': imageUrl || `${siteUrl}/images/chipfindr-og-image.jpg`,
+	'og:image:width': '1200',
+	'og:image:height': '630',
+	'og:locale': 'en_GB',
+	'twitter:card': 'summary_large_image',
+	'twitter:title': fullTitle,
+	'twitter:description': description || `Find the best fish & chip shops across the UK with ${siteName}`,
+	'twitter:image': imageUrl || `${siteUrl}/images/chipfindr-og-image.jpg`,
+	'theme-color': '#2563eb',
+};
+
+// Merge with custom social tags
+const finalSocialTags = { ...defaultSocialTags, ...socialMetaTags };
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} - {siteName}</title>
+		
+		<!-- Primary Meta Tags -->
+		<title>{fullTitle}</title>
 		{description && <meta name="description" content={description} />}
 		{keywords && <meta name="keywords" content={keywords} />}
 		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+		
+		<!-- Social Media Meta Tags -->
+		{Object.entries(finalSocialTags).map(([property, content]) => (
+			property.startsWith('og:') ? 
+				<meta property={property} content={content} /> :
+				<meta name={property} content={content} />
+		))}
+		
+		<!-- Structured Data -->
+		{structuredData.map((data) => (
+			<script type="application/ld+json" set:html={JSON.stringify(data)} />
+		))}
+		
+		<!-- Additional SEO Meta Tags -->
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta name="author" content="ChipFindr" />
+		<link rel="sitemap" href="/sitemap.xml" />
 	</head>
 	<body>
 		<Navigation />

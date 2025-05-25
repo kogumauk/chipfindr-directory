@@ -1,20 +1,55 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SearchBar from '../components/SearchBar.astro';
+import { generateSearchPageStructuredData, generateBreadcrumbStructuredData, generateSocialMetaTags } from '../utils/seo/structuredData';
+
+// Get URL parameters for initial search state
+const searchQuery = Astro.url.searchParams.get('q') || '';
+const locationQuery = Astro.url.searchParams.get('location') || '';
+
+// Generate dynamic title and description based on search parameters
+let pageTitle = 'Search Fish & Chip Shops';
+let pageDescription = 'Search for fish & chip shops across the UK. Find opening times, reviews, and contact details for local chippies.';
+
+if (searchQuery && locationQuery) {
+  pageTitle = `${searchQuery} in ${locationQuery} - Fish & Chip Shop Search`;
+  pageDescription = `Find ${searchQuery} fish & chip shops in ${locationQuery}. Compare ratings, reviews, opening hours and contact details.`;
+} else if (searchQuery) {
+  pageTitle = `${searchQuery} - Fish & Chip Shop Search`;
+  pageDescription = `Search results for "${searchQuery}" fish & chip shops across the UK. Compare ratings, reviews and opening hours.`;
+} else if (locationQuery) {
+  pageTitle = `Fish & Chip Shops in ${locationQuery}`;
+  pageDescription = `Find the best fish & chip shops in ${locationQuery}. Compare ratings, reviews, opening hours and contact details.`;
+}
 
 // Create breadcrumbs
 const breadcrumbs = [
   { label: 'Home', href: '/' },
   { label: 'Search Results' }
 ];
+
+// Generate structured data
+const searchStructuredData = generateSearchPageStructuredData(searchQuery, locationQuery, Astro.url.origin);
+const breadcrumbStructuredData = generateBreadcrumbStructuredData(breadcrumbs, Astro.url.origin);
+
+// Generate social media meta tags
+const socialMetaTags = generateSocialMetaTags(
+  pageTitle,
+  pageDescription,
+  Astro.url.href
+);
+
+const structuredDataArray = [searchStructuredData, breadcrumbStructuredData];
 ---
 
 <Layout
-  title="Search Fish & Chip Shops"
-  description="Search for fish & chip shops across the UK. Find opening times, reviews, and contact details for local chippies."
+  title={pageTitle}
+  description={pageDescription}
   keywords="fish and chips, chippy, search, UK, takeaway, restaurant"
-  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  canonicalUrl={Astro.url.href}
   breadcrumbs={breadcrumbs}
+  structuredData={structuredDataArray}
+  socialMetaTags={socialMetaTags}
 >
   <main>
     <!-- Search Header -->
