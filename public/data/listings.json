@@ -1,119 +1,5592 @@
 {
   "listings": [
     {
-      "id": "brixham-fish-restaurant",
+      "id": "brixham-fish-restaurant-takeaway-22-the-quay",
       "name": {
         "text": "Brixham Fish Restaurant & Takeaway"
       },
       "formattedAddress": "22 The Quay, Brixham TQ5 8AW, UK",
       "town": "Brixham",
-      "county": "Devon",
+      "county": "Torbay",
       "postcode": "TQ5 8AW",
       "rating": 4.6,
       "reviewCount": 484,
       "primaryTypeDisplayName": {
-        "text": "Restaurant"
+        "text": "Restaurant",
+        "languageCode": "en-US"
       },
-      "nationalPhoneNumber": "01803 123456",
       "websiteUri": "http://brixhamfishrestaurant.com/",
       "verified": true,
       "category": "fish-and-chips",
       "subcategory": "restaurant",
-      "searchText": "brixham fish restaurant & takeaway 22 the quay, brixham tq5 8aw, uk brixham devon tq5 8aw restaurant fish-and-chips restaurant"
+      "location": {
+        "latitude": 50.3973947,
+        "longitude": -3.5128581
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 9:00 PM",
+          "Tuesday: 11:30 AM – 9:00 PM",
+          "Wednesday: 11:30 AM – 9:00 PM",
+          "Thursday: 11:30 AM – 9:00 PM",
+          "Friday: 11:30 AM – 9:00 PM",
+          "Saturday: 11:30 AM – 9:00 PM",
+          "Sunday: 11:30 AM – 9:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "brixham fish restaurant & takeaway 22 the quay, brixham tq5 8aw, uk brixham torbay tq5 8aw restaurant fish-and-chips restaurant"
     },
     {
-      "id": "simply-fish-brixham",
-      "name": {
-        "text": "Simply Fish"
-      },
-      "formattedAddress": "68-74 Fore St, Brixham TQ5 8AF, UK",
-      "town": "Brixham",
-      "county": "Devon",
-      "postcode": "TQ5 8AF",
-      "rating": 4.3,
-      "reviewCount": 1200,
-      "primaryTypeDisplayName": {
-        "text": "Seafood Restaurant"
-      },
-      "nationalPhoneNumber": "01803 859585",
-      "websiteUri": "http://simplyfishrestaurant.co.uk/",
-      "verified": true,
-      "category": "fish-and-chips",
-      "subcategory": "seafood-restaurant",
-      "searchText": "simply fish 68-74 fore st, brixham tq5 8af, uk brixham devon tq5 8af seafood restaurant fish-and-chips seafood-restaurant"
-    },
-    {
-      "id": "rockfish-brixham",
-      "name": {
-        "text": "Rockfish"
-      },
-      "formattedAddress": "New Fish Quay, Brixham TQ5 8AW, UK",
-      "town": "Brixham",
-      "county": "Devon",
-      "postcode": "TQ5 8AW",
-      "rating": 4.5,
-      "reviewCount": 2688,
-      "primaryTypeDisplayName": {
-        "text": "Seafood Restaurant"
-      },
-      "nationalPhoneNumber": "01803 850872",
-      "websiteUri": "https://therockfish.co.uk/pages/brixham-seafood-restaurant",
-      "verified": true,
-      "category": "fish-and-chips",
-      "subcategory": "seafood-restaurant",
-      "searchText": "rockfish new fish quay, brixham tq5 8aw, uk brixham devon tq5 8aw seafood restaurant fish-and-chips seafood-restaurant"
-    },
-    {
-      "id": "fishionados-brixham",
+      "id": "fishionados-10-summercourt-way",
       "name": {
         "text": "Fishionados"
       },
       "formattedAddress": "10 Summercourt Way, Brixham TQ5 0DY, UK",
       "town": "Brixham",
-      "county": "Devon",
+      "county": "Torbay",
       "postcode": "TQ5 0DY",
       "rating": 4.4,
       "reviewCount": 217,
       "primaryTypeDisplayName": {
-        "text": "Takeout Restaurant"
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
       },
       "nationalPhoneNumber": "01803 340908",
       "websiteUri": "https://www.fishionados.co.uk/",
       "verified": true,
       "category": "fish-and-chips",
       "subcategory": "takeaway",
-      "searchText": "fishionados 10 summercourt way, brixham tq5 0dy, uk brixham devon tq5 0dy takeout restaurant fish-and-chips takeaway"
+      "location": {
+        "latitude": 50.385506199999995,
+        "longitude": -3.5301746
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 2,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 4:30 – 8:00 PM",
+          "Wednesday: 4:30 – 8:00 PM",
+          "Thursday: 4:30 – 8:00 PM",
+          "Friday: 4:30 – 8:30 PM",
+          "Saturday: 4:30 – 8:00 PM",
+          "Sunday: Closed"
+        ],
+        "nextOpenTime": "2025-04-22T15:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "fishionados 10 summercourt way, brixham tq5 0dy, uk brixham torbay tq5 0dy takeout restaurant fish-and-chips takeaway"
     },
     {
-      "id": "davids-fish-chips",
+      "id": "simply-fish-6874-fore-st",
+      "name": {
+        "text": "Simply Fish"
+      },
+      "formattedAddress": "68-74 Fore St, Brixham TQ5 8AF, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 8AF",
+      "rating": 4.3,
+      "reviewCount": 1200,
+      "primaryTypeDisplayName": {
+        "text": "Seafood Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 859585",
+      "websiteUri": "http://simplyfishrestaurant.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "seafood-restaurant",
+      "location": {
+        "latitude": 50.395843899999996,
+        "longitude": -3.5126364
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 6:00 PM",
+          "Tuesday: 11:30 AM – 8:00 PM",
+          "Wednesday: 11:30 AM – 8:00 PM",
+          "Thursday: 11:30 AM – 8:00 PM",
+          "Friday: 11:30 AM – 9:00 PM",
+          "Saturday: 11:30 AM – 9:00 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "simply fish 68-74 fore st, brixham tq5 8af, uk brixham torbay tq5 8af seafood restaurant fish-and-chips seafood-restaurant"
+    },
+    {
+      "id": "the-dutchy-1-the-strand",
+      "name": {
+        "text": "The Dutchy"
+      },
+      "formattedAddress": "1 The Strand, Brixham TQ5 8EH, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 8EH",
+      "rating": 4.3,
+      "reviewCount": 25,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 714416",
+      "websiteUri": "http://www.thedutchy.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 50.3959094,
+        "longitude": -3.5127097999999997
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 7:00 PM",
+          "Tuesday: 11:30 AM – 7:00 PM",
+          "Wednesday: 11:30 AM – 7:00 PM",
+          "Thursday: 11:30 AM – 7:00 PM",
+          "Friday: 11:30 AM – 8:00 PM",
+          "Saturday: 11:30 AM – 8:00 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "the dutchy 1 the strand, brixham tq5 8eh, uk brixham torbay tq5 8eh restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "rockfish-new-fish-quay",
+      "name": {
+        "text": "Rockfish"
+      },
+      "formattedAddress": "New Fish Quay, Brixham TQ5 8AW, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 8AW",
+      "rating": 4.5,
+      "reviewCount": 2688,
+      "primaryTypeDisplayName": {
+        "text": "Seafood Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 850872",
+      "websiteUri": "https://therockfish.co.uk/pages/brixham-seafood-restaurant?utm_source=brixham-google&utm_medium=referral&utm_campaign=third-party-tracking",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "seafood-restaurant",
+      "location": {
+        "latitude": 50.397940999999996,
+        "longitude": -3.512194
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 9:00 PM",
+          "Tuesday: 12:00 – 9:00 PM",
+          "Wednesday: 12:00 – 9:00 PM",
+          "Thursday: 12:00 – 9:00 PM",
+          "Friday: 12:00 – 9:00 PM",
+          "Saturday: 12:00 – 9:00 PM",
+          "Sunday: 12:00 – 9:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "searchText": "rockfish new fish quay, brixham tq5 8aw, uk brixham torbay tq5 8aw seafood restaurant fish-and-chips seafood-restaurant"
+    },
+    {
+      "id": "breakwater-coffee-shop-bistro-berry-head-rd",
+      "name": {
+        "text": "Breakwater Coffee Shop & Bistro"
+      },
+      "formattedAddress": "Berry Head Rd, Brixham TQ5 9AF, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 9AF",
+      "rating": 4.5,
+      "reviewCount": 1613,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 856738",
+      "websiteUri": "http://breakwaterbistro.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 50.399718,
+        "longitude": -3.5039601
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 9:00 PM",
+          "Tuesday: 9:00 AM – 9:00 PM",
+          "Wednesday: 9:00 AM – 9:00 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 9:00 PM",
+          "Sunday: 9:00 AM – 9:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T08:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "breakwater coffee shop & bistro berry head rd, brixham tq5 9af, uk brixham torbay tq5 9af restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "the-prince-william-prince-william-quay",
+      "name": {
+        "text": "The Prince William"
+      },
+      "formattedAddress": "Prince William Quay, Berry Head Rd, Brixham TQ5 9BW, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 9BW",
+      "rating": 4.3,
+      "reviewCount": 1948,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 854468",
+      "websiteUri": "http://theprincewilliam.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 50.3976172,
+        "longitude": -3.5082549
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 11:00 PM",
+          "Tuesday: 11:00 AM – 10:30 PM",
+          "Wednesday: 11:00 AM – 11:00 PM",
+          "Thursday: 11:00 AM – 11:00 PM",
+          "Friday: 11:00 AM – 11:00 PM",
+          "Saturday: 11:00 AM – 11:00 PM",
+          "Sunday: 11:00 AM – 11:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "30"
+        }
+      },
+      "searchText": "the prince william prince william quay, berry head rd, brixham tq5 9bw, uk brixham torbay tq5 9bw restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "davids-fish-chips-64-bolton-st",
       "name": {
         "text": "David's Fish & Chips"
       },
       "formattedAddress": "64 Bolton St, Brixham TQ5 9DH, UK",
       "town": "Brixham",
-      "county": "Devon",
+      "county": "Torbay",
       "postcode": "TQ5 9DH",
       "rating": 4.5,
       "reviewCount": 552,
       "primaryTypeDisplayName": {
-        "text": "Takeout Restaurant"
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
       },
       "nationalPhoneNumber": "01803 855771",
       "websiteUri": "http://www.davids-chippy.co.uk/",
       "verified": true,
       "category": "fish-and-chips",
       "subcategory": "takeaway",
-      "searchText": "david's fish & chips 64 bolton st, brixham tq5 9dh, uk brixham devon tq5 9dh takeout restaurant fish-and-chips takeaway"
+      "location": {
+        "latitude": 50.3917463,
+        "longitude": -3.5145964
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 1:30 PM, 5:00 – 8:30 PM",
+          "Tuesday: 12:00 – 1:30 PM, 5:00 – 8:30 PM",
+          "Wednesday: 12:00 – 1:30 PM, 5:00 – 8:30 PM",
+          "Thursday: 12:00 – 1:30 PM, 5:00 – 8:30 PM",
+          "Friday: 12:00 – 1:30 PM, 4:30 – 9:00 PM",
+          "Saturday: 12:00 – 1:30 PM, 4:30 – 8:30 PM",
+          "Sunday: 5:00 – 8:30 PM"
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "david's fish & chips 64 bolton st, brixham tq5 9dh, uk brixham torbay tq5 9dh takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "brixham-grill-fish-bar-27a-fore-st",
+      "name": {
+        "text": "Brixham Grill & Fish Bar"
+      },
+      "formattedAddress": "27A Fore St, Brixham TQ5 8AA, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 8AA",
+      "rating": 3.6,
+      "reviewCount": 43,
+      "primaryTypeDisplayName": {
+        "text": "Fast Food Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 855344",
+      "websiteUri": "https://www.brixhamgrill.com/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 50.3944504,
+        "longitude": -3.5144737
+      },
+      "currentOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "truncated": true,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 59,
+              "truncated": true,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 4:00 – 11:45 PM",
+          "Tuesday: 4:00 – 11:45 PM",
+          "Wednesday: 4:00 – 11:45 PM",
+          "Thursday: 4:00 – 11:45 PM",
+          "Friday: 4:00 PM – 12:45 AM",
+          "Saturday: 4:00 PM – 12:45 AM",
+          "Sunday: 4:00 – 11:45 PM"
+        ],
+        "nextCloseTime": "2025-04-20T22:45:00Z"
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "brixham grill & fish bar 27a fore st, brixham tq5 8aa, uk brixham torbay tq5 8aa fast food restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "chish-fipps-3-the-strand",
+      "name": {
+        "text": "Chish & Fipps"
+      },
+      "formattedAddress": "3 The Strand, Brixham TQ5 8EH, UK",
+      "town": "Brixham",
+      "county": "Torbay",
+      "postcode": "TQ5 8EH",
+      "rating": 4.1,
+      "reviewCount": 22,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01803 853357",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 50.3959675,
+        "longitude": -3.5129619
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 7:30 PM",
+          "Tuesday: 11:30 AM – 7:30 PM",
+          "Wednesday: 11:30 AM – 7:30 PM",
+          "Thursday: 11:30 AM – 7:30 PM",
+          "Friday: 11:30 AM – 7:30 PM",
+          "Saturday: 11:30 AM – 7:30 PM",
+          "Sunday: 11:30 AM – 7:30 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "searchText": "chish & fipps 3 the strand, brixham tq5 8eh, uk brixham torbay tq5 8eh takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "budleigh-fish-chips-7-chapel-st",
+      "name": {
+        "text": "Budleigh Fish & Chips"
+      },
+      "formattedAddress": "7 Chapel St, Budleigh Salterton EX9 6LX, UK",
+      "town": "Budleigh Salterton",
+      "county": "Devon",
+      "postcode": "EX9 6LX",
+      "rating": 4.2,
+      "reviewCount": 481,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01395 442962",
+      "websiteUri": "http://www.budleighfishandchips.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 50.629804500000006,
+        "longitude": -3.3251309
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 2:00 PM, 5:00 – 8:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 2:00 PM, 5:00 – 8:00 PM",
+          "Thursday: 12:00 – 2:00 PM, 5:00 – 8:00 PM",
+          "Friday: 12:00 – 2:00 PM, 5:00 – 8:00 PM",
+          "Saturday: 12:00 – 2:00 PM, 5:00 – 8:00 PM",
+          "Sunday: Closed"
+        ],
+        "specialDays": [
+          {
+            "date": {
+              "year": 2025,
+              "month": 4,
+              "day": 21
+            }
+          }
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "budleigh fish & chips 7 chapel st, budleigh salterton ex9 6lx, uk budleigh salterton devon ex9 6lx restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "no1-cromer-fish-and-chips-restaurant-and-takeaway-1-new-st",
+      "name": {
+        "text": "No.1 Cromer | Fish and Chips | Restaurant and Takeaway"
+      },
+      "formattedAddress": "1 New St, Cromer NR27 9HP, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9HP",
+      "rating": 4.4,
+      "reviewCount": 6011,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01263 515983",
+      "websiteUri": "https://no1cromer.com/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 52.9327207,
+        "longitude": 1.2986744
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 8:30 PM",
+          "Tuesday: 12:00 – 8:30 PM",
+          "Wednesday: 12:00 – 8:30 PM",
+          "Thursday: 12:00 – 8:30 PM",
+          "Friday: 12:00 – 8:30 PM",
+          "Saturday: 12:00 – 8:30 PM",
+          "Sunday: 12:00 – 8:30 PM"
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "no.1 cromer | fish and chips | restaurant and takeaway 1 new st, cromer nr27 9hp, uk cromer norfolk nr27 9hp restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "upstairs-no1-cromer-1-new-st",
+      "name": {
+        "text": "Upstairs @ NO1 Cromer"
+      },
+      "formattedAddress": "1 New St, Cromer NR27 9HP, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9HP",
+      "rating": 4.6,
+      "reviewCount": 122,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01263 515983",
+      "websiteUri": "https://www.no1cromer.com/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 52.9327024,
+        "longitude": 1.2988702
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 8:30 PM",
+          "Tuesday: 12:00 – 8:30 PM",
+          "Wednesday: 12:00 – 8:30 PM",
+          "Thursday: 12:00 – 8:30 PM",
+          "Friday: 12:00 – 8:30 PM",
+          "Saturday: 12:00 – 8:30 PM",
+          "Sunday: 12:00 – 8:30 PM"
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "30"
+        }
+      },
+      "searchText": "upstairs @ no1 cromer 1 new st, cromer nr27 9hp, uk cromer norfolk nr27 9hp restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "starvin-marvins-1-cabbell-rd",
+      "name": {
+        "text": "Starvin Marvins"
+      },
+      "formattedAddress": "1 Cabbell Rd, Cromer NR27 9HU, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9HU",
+      "rating": 3.9,
+      "reviewCount": 42,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 52.9332479,
+        "longitude": 1.2968119
+      },
+      "searchText": "starvin marvins 1 cabbell rd, cromer nr27 9hu, uk cromer norfolk nr27 9hu takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "mary-janes-fish-bar-2729-garden-st",
+      "name": {
+        "text": "Mary Jane's Fish Bar"
+      },
+      "formattedAddress": "27-29 Garden St, Cromer NR27 9HN, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9HN",
+      "rating": 4.3,
+      "reviewCount": 1315,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01263 511208",
+      "websiteUri": "https://www.maryjanes.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 52.9320574,
+        "longitude": 1.2997462
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 7:00 PM",
+          "Tuesday: 11:30 AM – 7:00 PM",
+          "Wednesday: 11:30 AM – 7:00 PM",
+          "Thursday: 11:30 AM – 7:00 PM",
+          "Friday: 11:30 AM – 7:30 PM",
+          "Saturday: 11:30 AM – 7:30 PM",
+          "Sunday: 12:00 – 7:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "mary jane's fish bar 27-29 garden st, cromer nr27 9hn, uk cromer norfolk nr27 9hn takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "fish-chips-the-slope-promenade",
+      "name": {
+        "text": "Fish & Chips @ The Slope"
+      },
+      "formattedAddress": "Promenade, Cromer NR27 9AR, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9AR",
+      "rating": 3.9,
+      "reviewCount": 57,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 52.9334103,
+        "longitude": 1.2963729
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 5:30 PM",
+          "Tuesday: 11:30 AM – 5:30 PM",
+          "Wednesday: 11:30 AM – 5:30 PM",
+          "Thursday: 11:30 AM – 5:30 PM",
+          "Friday: 11:30 AM – 5:30 PM",
+          "Saturday: 11:30 AM – 5:30 PM",
+          "Sunday: 11:30 AM – 5:30 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "fish & chips @ the slope promenade, cromer nr27 9ar, uk cromer norfolk nr27 9ar takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "park-chippy-37-station-rd",
+      "name": {
+        "text": "Park Chippy"
+      },
+      "formattedAddress": "37 Station Rd, Cromer NR27 0DX, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 0DX",
+      "rating": 4.2,
+      "reviewCount": 214,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "07879 047341",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 52.920424,
+        "longitude": 1.3096166
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 45,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 11:45 AM – 1:30 PM, 4:30 – 7:30 PM",
+          "Wednesday: 11:45 AM – 1:30 PM, 4:30 – 7:30 PM",
+          "Thursday: 11:45 AM – 1:30 PM, 4:30 – 7:30 PM",
+          "Friday: 11:45 AM – 1:30 PM, 4:30 – 8:00 PM",
+          "Saturday: 11:45 AM – 1:30 PM, 4:30 – 8:00 PM",
+          "Sunday: Closed"
+        ],
+        "nextOpenTime": "2025-04-22T10:45:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "park chippy 37 station rd, cromer nr27 0dx, uk cromer norfolk nr27 0dx takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "wills-plaice-wills-plaice",
+      "name": {
+        "text": "Will's Plaice"
+      },
+      "formattedAddress": "Will's Plaice, Beach Rd, East Runton, Cromer NR27 9PA, UK",
+      "town": "Cromer",
+      "county": "Norfolk",
+      "postcode": "NR27 9PA",
+      "rating": 4.3,
+      "reviewCount": 420,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01263 519222",
+      "websiteUri": "http://www.chipshopeastrunton.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 52.9360733,
+        "longitude": 1.2720711999999998
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 8:00 PM",
+          "Tuesday: 12:00 – 8:00 PM",
+          "Wednesday: 12:00 – 8:00 PM",
+          "Thursday: 12:00 – 8:00 PM",
+          "Friday: 12:00 – 8:00 PM",
+          "Saturday: 12:00 – 8:00 PM",
+          "Sunday: 12:00 – 8:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "will's plaice will's plaice, beach rd, east runton, cromer nr27 9pa, uk cromer norfolk nr27 9pa takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "rainbow-fish-bar-12-avenue-rd",
+      "name": {
+        "text": "Rainbow Fish Bar"
+      },
+      "formattedAddress": "1-2 Avenue Rd, Freshwater PO40 9UR, UK",
+      "town": "Freshwater",
+      "county": "Isle of Wight",
+      "postcode": "PO40 9UR",
+      "rating": 4.2,
+      "reviewCount": 317,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01983 752257",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 50.682930899999995,
+        "longitude": -1.5263442
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 13,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 1:30 PM, 5:00 – 7:00 PM",
+          "Wednesday: 12:00 – 1:30 PM, 5:00 – 7:00 PM",
+          "Thursday: 12:00 – 1:30 PM, 5:00 – 7:00 PM",
+          "Friday: 12:00 – 1:30 PM, 5:00 – 7:30 PM",
+          "Saturday: 12:00 – 1:30 PM, 5:00 – 7:00 PM",
+          "Sunday: Closed"
+        ],
+        "nextOpenTime": "2025-04-22T11:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "rainbow fish bar 1-2 avenue rd, freshwater po40 9ur, uk freshwater isle of wight po40 9ur takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "whiteheads-fish-and-chips-ltd-6-the-greenway",
+      "name": {
+        "text": "Whiteheads Fish and Chips Ltd"
+      },
+      "formattedAddress": "6 The Greenway, Hornsea HU18 1SL, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1SL",
+      "rating": 4.6,
+      "reviewCount": 3011,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 536954",
+      "websiteUri": "http://whiteheadsfishandchips.com/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.903717,
+        "longitude": -0.1674511
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 2:00 PM, 4:00 – 6:00 PM",
+          "Tuesday: 11:30 AM – 2:00 PM, 4:00 – 6:00 PM",
+          "Wednesday: 11:30 AM – 2:00 PM, 4:00 – 6:00 PM",
+          "Thursday: 11:30 AM – 2:00 PM, 4:00 – 6:00 PM",
+          "Friday: 11:30 AM – 2:00 PM, 4:00 – 7:00 PM",
+          "Saturday: 11:30 AM – 2:00 PM, 4:00 – 7:00 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "whiteheads fish and chips ltd 6 the greenway, hornsea hu18 1sl, uk hornsea east riding of yorkshire hu18 1sl restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "lilys-fish-and-chips-63-newbegin",
+      "name": {
+        "text": "Lily's Fish and Chips"
+      },
+      "formattedAddress": "63 Newbegin, Hornsea HU18 1PA, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1PA",
+      "rating": 4.7,
+      "reviewCount": 222,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 533001",
+      "websiteUri": "https://lilysathornseafishandchips.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 53.911574699999996,
+        "longitude": -0.1689521
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 6:00 PM",
+          "Tuesday: 11:30 AM – 7:00 PM",
+          "Wednesday: 11:30 AM – 7:00 PM",
+          "Thursday: 11:30 AM – 7:00 PM",
+          "Friday: 11:30 AM – 7:00 PM",
+          "Saturday: 11:30 AM – 7:00 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "lily's fish and chips 63 newbegin, hornsea hu18 1pa, uk hornsea east riding of yorkshire hu18 1pa takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "seafront-chippy-20-marine-dr",
+      "name": {
+        "text": "Seafront Chippy"
+      },
+      "formattedAddress": "20 Marine Dr, Hornsea HU18 1NJ, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1NJ",
+      "rating": 4.4,
+      "reviewCount": 968,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 535530",
+      "websiteUri": "https://seafrontchippy.touchtakeaway.net/menu",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 53.914932099999994,
+        "longitude": -0.1615893
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 7:00 PM",
+          "Tuesday: 11:30 AM – 7:00 PM",
+          "Wednesday: 11:30 AM – 7:00 PM",
+          "Thursday: 11:30 AM – 7:00 PM",
+          "Friday: 11:30 AM – 7:00 PM",
+          "Saturday: 11:30 AM – 7:00 PM",
+          "Sunday: 11:30 AM – 7:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "seafront chippy 20 marine dr, hornsea hu18 1nj, uk hornsea east riding of yorkshire hu18 1nj takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "port-of-call-sands-ln",
+      "name": {
+        "text": "Port of Call"
+      },
+      "formattedAddress": "Sands Ln, South Promenade, Hornsea HU18 1PZ, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1PZ",
+      "rating": 4.5,
+      "reviewCount": 133,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.9124421,
+        "longitude": -0.16040749999999998
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "port of call sands ln, south promenade, hornsea hu18 1pz, uk hornsea east riding of yorkshire hu18 1pz restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "sullivans-3438-new-rd",
+      "name": {
+        "text": "Sullivans"
+      },
+      "formattedAddress": "34-38 New Rd, Hornsea HU18 1PW, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1PW",
+      "rating": 4.4,
+      "reviewCount": 1618,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 534118",
+      "websiteUri": "http://www.sullivansofhornsea.co.uk/",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 53.9132471,
+        "longitude": -0.1615226
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 6:00 PM",
+          "Tuesday: 11:30 AM – 6:00 PM",
+          "Wednesday: 11:30 AM – 6:00 PM",
+          "Thursday: 11:30 AM – 6:00 PM",
+          "Friday: 11:30 AM – 6:00 PM",
+          "Saturday: 11:30 AM – 6:00 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "sullivans 34-38 new rd, hornsea hu18 1pw, uk hornsea east riding of yorkshire hu18 1pw takeout restaurant fish-and-chips takeaway"
+    },
+    {
+      "id": "swiss-cottage-restaurant-lounge-bar-49a-new-rd",
+      "name": {
+        "text": "Swiss Cottage Restaurant & Lounge Bar"
+      },
+      "formattedAddress": "49a New Rd, Hornsea HU18 1PH, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1PH",
+      "rating": 4.7,
+      "reviewCount": 161,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 532458",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.9133121,
+        "longitude": -0.1624409
+      },
+      "currentOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 20
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 0,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 18,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 59,
+              "truncated": true,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 7:00 PM – 12:00 AM",
+          "Wednesday: 7:00 PM – 12:00 AM",
+          "Thursday: 7:00 PM – 12:00 AM",
+          "Friday: 7:00 PM – 12:00 AM",
+          "Saturday: 6:30 PM – 12:00 AM",
+          "Sunday: 12:00 – 3:30 PM, 7:00 PM – 12:00 AM"
+        ],
+        "nextCloseTime": "2025-04-20T23:00:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "20"
+        }
+      },
+      "searchText": "swiss cottage restaurant & lounge bar 49a new rd, hornsea hu18 1ph, uk hornsea east riding of yorkshire hu18 1ph restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "jbs-traditional-fish-chips-sands-ln",
+      "name": {
+        "text": "J.B's Traditional Fish & Chips"
+      },
+      "formattedAddress": "Sands Ln, Hornsea HU18 1PZ, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1PZ",
+      "rating": 2.8,
+      "reviewCount": 6,
+      "primaryTypeDisplayName": {
+        "text": "Restaurant",
+        "languageCode": "en-US"
+      },
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.9121276,
+        "longitude": -0.160519
+      },
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "j.b's traditional fish & chips sands ln, hornsea hu18 1pz, uk hornsea east riding of yorkshire hu18 1pz restaurant fish-and-chips restaurant"
+    },
+    {
+      "id": "chip-n-gails-26-cliff-rd",
+      "name": {
+        "text": "Chip 'n' Gails"
+      },
+      "formattedAddress": "26 Cliff Rd, Hornsea HU18 1LN, UK",
+      "town": "Hornsea",
+      "county": "East Riding of Yorkshire",
+      "postcode": "HU18 1LN",
+      "rating": 4.3,
+      "reviewCount": 174,
+      "primaryTypeDisplayName": {
+        "text": "Takeout Restaurant",
+        "languageCode": "en-US"
+      },
+      "nationalPhoneNumber": "01964 534231",
+      "verified": true,
+      "category": "fish-and-chips",
+      "subcategory": "takeaway",
+      "location": {
+        "latitude": 53.9139677,
+        "longitude": -0.1657358
+      },
+      "currentOpeningHours": {
+        "openNow": false,
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 21
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 22
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 23
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 24
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 25
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 30,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 26
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Tuesday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Wednesday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Thursday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Friday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Saturday: 11:30 AM – 2:00 PM, 4:30 – 7:00 PM",
+          "Sunday: Closed"
+        ],
+        "nextOpenTime": "2025-04-21T10:30:00Z"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "priceRange": {
+        "startPrice": {
+          "currencyCode": "GBP",
+          "units": "1"
+        },
+        "endPrice": {
+          "currencyCode": "GBP",
+          "units": "10"
+        }
+      },
+      "searchText": "chip 'n' gails 26 cliff rd, hornsea hu18 1ln, uk hornsea east riding of yorkshire hu18 1ln takeout restaurant fish-and-chips takeaway"
     }
   ],
   "metadata": {
-    "generatedAt": "2025-05-25T20:02:24.777Z",
-    "totalCount": 5,
+    "generatedAt": "2025-05-25T20:27:03.743Z",
+    "totalCount": 27,
     "locations": [
-      "Brixham"
+      "Brixham",
+      "Budleigh Salterton",
+      "Cromer",
+      "Freshwater",
+      "Hornsea"
+    ],
+    "counties": [
+      "Torbay",
+      "Devon",
+      "Norfolk",
+      "Isle of Wight",
+      "East Riding of Yorkshire"
     ],
     "categories": [
       "fish-and-chips"
-    ]
+    ],
+    "processedFiles": 5,
+    "source": "Google Places API"
   }
 }

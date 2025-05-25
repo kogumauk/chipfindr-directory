@@ -1,0 +1,2052 @@
+{
+    "metadata": {
+        "request_parameters": {
+            "textQuery": "Fish and Chip shops in Hornsea, East Riding of Yorkshire",
+            "maxResultCount": 20
+        },
+        "field_mask_used": [
+            "nextPageToken",
+            "places.id",
+            "places.name",
+            "places.addressComponents",
+            "places.adrFormatAddress",
+            "places.formattedAddress",
+            "places.location",
+            "places.displayName",
+            "places.businessStatus",
+            "places.primaryType",
+            "places.primaryTypeDisplayName",
+            "places.currentOpeningHours",
+            "places.internationalPhoneNumber",
+            "places.nationalPhoneNumber",
+            "places.priceLevel",
+            "places.priceRange",
+            "places.rating",
+            "places.userRatingCount",
+            "places.websiteUri"
+        ],
+        "request_timestamp": "2025-04-20T23:11:30.503336",
+        "response_details": {
+            "timestamp": "2025-04-20T23:11:30.503336",
+            "status_code": 200,
+            "total_results": 8
+        }
+    },
+    "results": [
+        {
+            "name": "places/ChIJhxXsx2SleEgRNaOxTII7LdM",
+            "id": "ChIJhxXsx2SleEgRNaOxTII7LdM",
+            "nationalPhoneNumber": "01964 536954",
+            "internationalPhoneNumber": "+44 1964 536954",
+            "formattedAddress": "6 The Greenway, Hornsea HU18 1SL, UK",
+            "addressComponents": [
+                {
+                    "longText": "6",
+                    "shortText": "6",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "The Greenway",
+                    "shortText": "The Greenway",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1SL",
+                    "shortText": "HU18 1SL",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.903717,
+                "longitude": -0.1674511
+            },
+            "rating": 4.6,
+            "websiteUri": "http://whiteheadsfishandchips.com/",
+            "adrFormatAddress": "<span class=\"street-address\">6 The Greenway</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1SL</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 3011,
+            "displayName": {
+                "text": "Whiteheads Fish and Chips Ltd",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20096:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20096:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20096:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20096:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20097:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20097:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJD4cIVYeveEgRn55LqPsOm3I",
+            "id": "ChIJD4cIVYeveEgRn55LqPsOm3I",
+            "nationalPhoneNumber": "01964 533001",
+            "internationalPhoneNumber": "+44 1964 533001",
+            "formattedAddress": "63 Newbegin, Hornsea HU18 1PA, UK",
+            "addressComponents": [
+                {
+                    "longText": "63",
+                    "shortText": "63",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Newbegin",
+                    "shortText": "Newbegin",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1PA",
+                    "shortText": "HU18 1PA",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.911574699999996,
+                "longitude": -0.1689521
+            },
+            "rating": 4.7,
+            "websiteUri": "https://lilysathornseafishandchips.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">63 Newbegin</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1PA</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 222,
+            "displayName": {
+                "text": "Lily's Fish and Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJV7qAvoaveEgRVa1V-BhXggU",
+            "id": "ChIJV7qAvoaveEgRVa1V-BhXggU",
+            "nationalPhoneNumber": "01964 535530",
+            "internationalPhoneNumber": "+44 1964 535530",
+            "formattedAddress": "20 Marine Dr, Hornsea HU18 1NJ, UK",
+            "addressComponents": [
+                {
+                    "longText": "20",
+                    "shortText": "20",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Marine Drive",
+                    "shortText": "Marine Dr",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1NJ",
+                    "shortText": "HU18 1NJ",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.914932099999994,
+                "longitude": -0.1615893
+            },
+            "rating": 4.4,
+            "websiteUri": "https://seafrontchippy.touchtakeaway.net/menu",
+            "adrFormatAddress": "<span class=\"street-address\">20 Marine Drive</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1NJ</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 968,
+            "displayName": {
+                "text": "Seafront Chippy",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJgcOHMYeveEgR_1MvKH3_RgI",
+            "id": "ChIJgcOHMYeveEgR_1MvKH3_RgI",
+            "formattedAddress": "Sands Ln, South Promenade, Hornsea HU18 1PZ, UK",
+            "addressComponents": [
+                {
+                    "longText": "Sands Lane",
+                    "shortText": "Sands Ln",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "South Promenade",
+                    "shortText": "South Promenade",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1PZ",
+                    "shortText": "HU18 1PZ",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.9124421,
+                "longitude": -0.16040749999999998
+            },
+            "rating": 4.5,
+            "adrFormatAddress": "<span class=\"street-address\">Sands Lane, South Promenade</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1PZ</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 133,
+            "displayName": {
+                "text": "Port of Call",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJ5yKLIIeveEgRix1lbcVIuFk",
+            "id": "ChIJ5yKLIIeveEgRix1lbcVIuFk",
+            "nationalPhoneNumber": "01964 534118",
+            "internationalPhoneNumber": "+44 1964 534118",
+            "formattedAddress": "34-38 New Rd, Hornsea HU18 1PW, UK",
+            "addressComponents": [
+                {
+                    "longText": "34-38",
+                    "shortText": "34-38",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "New Road",
+                    "shortText": "New Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1PW",
+                    "shortText": "HU18 1PW",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.9132471,
+                "longitude": -0.1615226
+            },
+            "rating": 4.4,
+            "websiteUri": "http://www.sullivansofhornsea.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">34-38 New Road</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1PW</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 1618,
+            "displayName": {
+                "text": "Sullivans",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJH5WB4oaveEgRjhRfF5m_Uyg",
+            "id": "ChIJH5WB4oaveEgRjhRfF5m_Uyg",
+            "nationalPhoneNumber": "01964 532458",
+            "internationalPhoneNumber": "+44 1964 532458",
+            "formattedAddress": "49a New Rd, Hornsea HU18 1PH, UK",
+            "addressComponents": [
+                {
+                    "longText": "49a",
+                    "shortText": "49a",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "New Road",
+                    "shortText": "New Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1PH",
+                    "shortText": "HU18 1PH",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.9133121,
+                "longitude": -0.1624409
+            },
+            "rating": 4.7,
+            "adrFormatAddress": "<span class=\"street-address\">49a New Road</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1PH</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 161,
+            "displayName": {
+                "text": "Swiss Cottage Restaurant & Lounge Bar",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": true,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 15,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 0,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 0,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 0,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 0,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 0,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 18,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 23,
+                            "minute": 59,
+                            "truncated": true,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: Closed",
+                    "Tuesday: 7:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+                    "Wednesday: 7:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+                    "Thursday: 7:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+                    "Friday: 7:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+                    "Saturday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+                    "Sunday: 12:00\u2009\u2013\u20093:30\u202fPM, 7:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+                ],
+                "nextCloseTime": "2025-04-20T23:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJN7c6NIeveEgRv5oI177Rl84",
+            "id": "ChIJN7c6NIeveEgRv5oI177Rl84",
+            "formattedAddress": "Sands Ln, Hornsea HU18 1PZ, UK",
+            "addressComponents": [
+                {
+                    "longText": "Sands Lane",
+                    "shortText": "Sands Ln",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1PZ",
+                    "shortText": "HU18 1PZ",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.9121276,
+                "longitude": -0.160519
+            },
+            "rating": 2.8,
+            "adrFormatAddress": "<span class=\"street-address\">Sands Lane</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1PZ</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 6,
+            "displayName": {
+                "text": "J.B's Traditional Fish & Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJ_Xs1JYaveEgRwAzZbryaKwY",
+            "id": "ChIJ_Xs1JYaveEgRwAzZbryaKwY",
+            "nationalPhoneNumber": "01964 534231",
+            "internationalPhoneNumber": "+44 1964 534231",
+            "formattedAddress": "26 Cliff Rd, Hornsea HU18 1LN, UK",
+            "addressComponents": [
+                {
+                    "longText": "26",
+                    "shortText": "26",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Cliff Road",
+                    "shortText": "Cliff Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hornsea",
+                    "shortText": "Hornsea",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "East Riding of Yorkshire",
+                    "shortText": "East Riding of Yorkshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "HU18 1LN",
+                    "shortText": "HU18 1LN",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 53.9139677,
+                "longitude": -0.1657358
+            },
+            "rating": 4.3,
+            "adrFormatAddress": "<span class=\"street-address\">26 Cliff Road</span>, <span class=\"locality\">Hornsea</span> <span class=\"postal-code\">HU18 1LN</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 174,
+            "displayName": {
+                "text": "Chip 'n' Gails",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:30\u2009\u2013\u20097:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        }
+    ]
+}
