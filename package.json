@@ -8,8 +8,12 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate:data": "node ./scripts/generate-listings-json.mjs",
+    "generate:pwa": "node ./scripts/generate-pwa-assets.mjs",
     "process:listings": "node ./scripts/process-listings.mjs",
-    "sync:supabase": "node ./scripts/sync-to-supabase.mjs"
+    "sync:supabase": "node ./scripts/sync-to-supabase.mjs",
+    "perf:audit": "lighthouse --output html --output-path ./performance-report.html",
+    "perf:analyze": "npm run build && npm run perf:audit",
+    "optimize:images": "node ./scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^9.2.2",
@@ -21,8 +25,12 @@
     "@supabase/supabase-js": "^2.44.4",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
+    "astro-compressor": "^1.0.0",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^1.2.0"
+    "eslint-plugin-astro": "^1.2.0",
+    "sharp": "^0.34.2",
+    "vite-plugin-pwa": "^1.0.0",
+    "web-vitals": "^5.0.1"
   }
 }

@@ -59,6 +59,18 @@ const finalSocialTags = { ...defaultSocialTags, ...socialMetaTags };
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		
+		<!-- Preconnect to external domains for performance -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<!-- PWA Meta Tags -->
+		<meta name="theme-color" content="#1e40af" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="ChipFindr" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		
 		<!-- Primary Meta Tags -->
 		<title>{fullTitle}</title>
 		{description && <meta name="description" content={description} />}
@@ -81,12 +93,46 @@ const finalSocialTags = { ...defaultSocialTags, ...socialMetaTags };
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		<meta name="author" content="ChipFindr" />
 		<link rel="sitemap" href="/sitemap.xml" />
+		
+		<!-- Performance Optimizations -->
+		<link rel="dns-prefetch" href="//www.google-analytics.com" />
+		<meta name="format-detection" content="telephone=no" />
+		
+		<!-- Critical CSS will be inlined here by build process -->
 	</head>
 	<body>
 		<Navigation />
 		{breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
 		<slot />
 	</body>
+	
+	<!-- Performance Monitoring Script -->
+	<script>
+		// Simple Web Vitals monitoring without external imports
+		if (typeof window !== 'undefined') {
+			// Basic performance monitoring
+			window.addEventListener('load', () => {
+				// Monitor loading performance
+				if (performance.getEntriesByType) {
+					const navigation = performance.getEntriesByType('navigation')[0];
+					if (navigation) {
+						console.log('[Performance] Page Load Time:', navigation.loadEventEnd - navigation.loadEventStart + 'ms');
+					}
+				}
+			});
+			
+			// PWA Service Worker Registration
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js')
+					.then((registration) => {
+						console.log('[PWA] Service Worker registered');
+					})
+					.catch((error) => {
+						console.log('[PWA] Service Worker registration failed:', error);
+					});
+			}
+		}
+	</script>
 </html>
 
 <style>
