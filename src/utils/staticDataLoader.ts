@@ -1,5 +1,5 @@
 // Static data loader for build-time data processing
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import type { BusinessListing } from '../types/BusinessListing';
 import { transformBusinessData, type JSONDataFile } from './dataLoader';
@@ -8,7 +8,7 @@ import { transformBusinessData, type JSONDataFile } from './dataLoader';
 let cachedListings: BusinessListing[] | null = null;
 
 /**
- * Load business listings at build time
+ * Load business listings at build time - now dynamically reads all JSON files
  */
 export function loadBusinessListingsSync(): BusinessListing[] {
   if (cachedListings) {
@@ -21,11 +21,10 @@ export function loadBusinessListingsSync(): BusinessListing[] {
     // Define the data directory path
     const dataDir = join(process.cwd(), 'data', 'listings');
     
-    // List of JSON files to load
-    const jsonFiles = [
-      '20250420_2311_Fish_and_Chip_shops_in_Brixham,_Devon.json',
-      '20250420_2311_Fish_and_Chip_shops_in_Budleigh_Salterton,_Devon.json'
-    ];
+    // Dynamically find all JSON files in the data directory
+    const jsonFiles = readdirSync(dataDir).filter(file => file.endsWith('.json'));
+    
+    console.log(`📁 [StaticDataLoader] Found ${jsonFiles.length} data files for build-time processing`);
     
     for (const filename of jsonFiles) {
       try {
@@ -34,14 +33,17 @@ export function loadBusinessListingsSync(): BusinessListing[] {
         const jsonData: JSONDataFile = JSON.parse(fileContent);
         
         if (jsonData.results && Array.isArray(jsonData.results)) {
+          let transformedCount = 0;
           for (const result of jsonData.results) {
             try {
               const transformed = transformBusinessData(result);
               listings.push(transformed);
+              transformedCount++;
             } catch (error) {
               console.warn(`Error transforming business data from ${filename}:`, error);
             }
           }
+          console.log(`   ✅ [StaticDataLoader] Loaded ${transformedCount} businesses from ${filename}`);
         }
       } catch (fileError) {
         console.warn(`Error loading file ${filename}:`, fileError);
@@ -49,6 +51,7 @@ export function loadBusinessListingsSync(): BusinessListing[] {
     }
     
     cachedListings = listings;
+    console.log(`🎉 [StaticDataLoader] Total businesses loaded: ${listings.length}`);
     return listings;
     
   } catch (error) {
