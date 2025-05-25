@@ -10,6 +10,7 @@ import {
   getRelatedLocations,
   type LocationInfo 
 } from '../../utils/locationUtils';
+import { generateLocationPageStructuredData, generateBreadcrumbStructuredData, generateSocialMetaTags } from '../../utils/seo/structuredData';
 
 // Generate static paths for all location pages
 export async function getStaticPaths() {
@@ -58,14 +59,34 @@ const avgRating = location.businesses
 
 const totalReviews = location.businesses
   .reduce((sum, b) => sum + (b.reviewCount || 0), 0);
+
+// Generate structured data
+const locationStructuredData = generateLocationPageStructuredData(
+  location.name, 
+  location.type, 
+  location.count, 
+  Astro.url.origin
+);
+const breadcrumbStructuredData = generateBreadcrumbStructuredData(breadcrumbs, Astro.url.origin);
+
+// Generate social media meta tags
+const socialMetaTags = generateSocialMetaTags(
+  metadata.title,
+  metadata.description,
+  Astro.url.href
+);
+
+const structuredDataArray = [locationStructuredData, breadcrumbStructuredData];
 ---
 
 <Layout
   title={metadata.title}
   description={metadata.description}
   keywords={metadata.keywords}
-  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  canonicalUrl={Astro.url.href}
   breadcrumbs={breadcrumbs}
+  structuredData={structuredDataArray}
+  socialMetaTags={socialMetaTags}
 >
   <main>
     <!-- Location Header -->

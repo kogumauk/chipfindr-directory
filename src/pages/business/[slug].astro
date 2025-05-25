@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getSampleListings } from '../../utils/staticDataLoader';
 import { generateBusinessSlug, formatRating, getStarRating, formatPriceLevel, getTodaysHours, isCurrentlyOpen } from '../../utils/formatters';
+import { generateBusinessStructuredData, generateBreadcrumbStructuredData, generateSocialMetaTags } from '../../utils/seo/structuredData';
 
 // Generate static paths for all businesses
 export async function getStaticPaths() {
@@ -31,14 +32,31 @@ const breadcrumbs = [
 // Generate page title and description
 const pageTitle = `${business.name.text} - Fish & Chip Shop in ${business.town}`;
 const pageDescription = `${business.name.text} in ${business.formattedAddress}. ${business.rating ? `Rated ${formatRating(business.rating)} stars` : ''} ${business.reviewCount ? `with ${business.reviewCount} reviews` : ''}. Find opening hours, contact details and more.`;
+
+// Generate structured data
+const businessStructuredData = generateBusinessStructuredData(business, Astro.url.origin);
+const breadcrumbStructuredData = generateBreadcrumbStructuredData(breadcrumbs, Astro.url.origin);
+
+// Generate social media meta tags
+const socialMetaTags = generateSocialMetaTags(
+  pageTitle,
+  pageDescription,
+  Astro.url.href,
+  undefined, // We'll add business images later
+  'article'
+);
+
+const structuredDataArray = [businessStructuredData, breadcrumbStructuredData];
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   keywords={`${business.name.text}, fish and chips, ${business.town}, ${business.county}, chippy, takeaway, restaurant`}
-  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  canonicalUrl={Astro.url.href}
   breadcrumbs={breadcrumbs}
+  structuredData={structuredDataArray}
+  socialMetaTags={socialMetaTags}
 >
   <main>
     <!-- Business Header Section -->

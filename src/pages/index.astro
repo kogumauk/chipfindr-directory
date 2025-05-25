@@ -5,6 +5,7 @@ import BusinessCard from '../components/BusinessCard.astro';
 import { getSampleListings } from '../utils/staticDataLoader';
 import { getLocationStats } from '../utils/dataLoader';
 import { extractLocations, generateLocationSlug } from '../utils/locationUtils';
+import { generateSocialMetaTags } from '../utils/seo/structuredData';
 
 // Load business listings and location data
 const allListings = getSampleListings();
@@ -24,14 +25,61 @@ const featuredListings = allListings
   .slice(0, 6);
 
 const breadcrumbs = [{ label: 'Home', href: '/' }];
+
+// Generate website structured data
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChipFindr",
+  "description": "Find the best fish & chip shops across the UK with reviews, opening hours, and contact details.",
+  "url": Astro.url.origin,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${Astro.url.origin}/search?q={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Fish & Chip Shop Directory",
+    "description": "Comprehensive directory of fish & chip shops across the UK",
+    "numberOfItems": stats.totalListings
+  }
+};
+
+// Generate organization structured data
+const organizationStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ChipFindr",
+  "description": "The UK's comprehensive directory for fish & chip shops",
+  "url": Astro.url.origin,
+  "logo": `${Astro.url.origin}/images/chipfindr-logo.png`,
+  "sameAs": [
+    // Social media profiles will be added when created
+  ]
+};
+
+// Generate social media meta tags
+const socialMetaTags = generateSocialMetaTags(
+  "Find the Best Fish & Chip Shops",
+  "Discover top-rated fish & chip shops across the UK. Find opening times, reviews, contact details and more for your perfect chippy experience.",
+  Astro.url.href
+);
+
+const structuredDataArray = [websiteStructuredData, organizationStructuredData];
 ---
 
 <Layout
   title="Find the Best Fish & Chip Shops"
   description="Discover top-rated fish & chip shops across the UK. Find opening times, reviews, contact details and more for your perfect chippy experience."
   keywords="fish and chips, chippy, fish shop, takeaway, restaurant, UK, Devon, Brixham, Budleigh Salterton"
-  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  canonicalUrl={Astro.url.href}
   breadcrumbs={breadcrumbs}
+  structuredData={structuredDataArray}
+  socialMetaTags={socialMetaTags}
 >
   <main>
     <!-- Hero Section -->
