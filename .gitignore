@@ -25,3 +25,19 @@ pnpm-debug.log*
 
 # Processed data output
 processed_data/
+
+# Desktop Commander / Electron app files
+claude.exe
+*.pak
+*.dll
+*.dat
+*.log
+locales/
+resources/
+*.bin
+squirrel.exe
+vk_*
+vulkan-*
+Squirrel-*.log
+debug.log
+'page-home.php'))

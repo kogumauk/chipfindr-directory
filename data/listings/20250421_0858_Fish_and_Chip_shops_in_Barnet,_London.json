@@ -1,0 +1,3588 @@
+{
+    "metadata": {
+        "request_parameters": {
+            "textQuery": "Fish and Chip shops in Barnet, London",
+            "maxResultCount": 20
+        },
+        "field_mask_used": [
+            "nextPageToken",
+            "places.id",
+            "places.name",
+            "places.addressComponents",
+            "places.adrFormatAddress",
+            "places.formattedAddress",
+            "places.location",
+            "places.displayName",
+            "places.businessStatus",
+            "places.primaryType",
+            "places.primaryTypeDisplayName",
+            "places.currentOpeningHours",
+            "places.internationalPhoneNumber",
+            "places.nationalPhoneNumber",
+            "places.priceLevel",
+            "places.priceRange",
+            "places.rating",
+            "places.userRatingCount",
+            "places.websiteUri"
+        ],
+        "request_timestamp": "2025-04-21T08:58:36.212683",
+        "response_details": {
+            "timestamp": "2025-04-21T08:58:36.212683",
+            "status_code": 200,
+            "total_results": 14
+        }
+    },
+    "results": [
+        {
+            "name": "places/ChIJfxuNLCoYdkgR2KZn4UVXou4",
+            "id": "ChIJfxuNLCoYdkgR2KZn4UVXou4",
+            "nationalPhoneNumber": "020 8441 4450",
+            "internationalPhoneNumber": "+44 20 8441 4450",
+            "formattedAddress": "1-2 Western Parade, Great N Rd, New Barnet, Barnet EN5 1AD, UK",
+            "addressComponents": [
+                {
+                    "longText": "1-2",
+                    "shortText": "1-2",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Western Parade",
+                    "shortText": "Western Parade",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Great North Road",
+                    "shortText": "Great N Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "New Barnet",
+                    "shortText": "New Barnet",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN5 1AD",
+                    "shortText": "EN5 1AD",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6463099,
+                "longitude": -0.18729540000000003
+            },
+            "rating": 4.3,
+            "websiteUri": "http://freshfrybarnet.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">1-2 Western Parade, Great North Road</span>, <span class=\"extended-address\">New Barnet</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN5 1AD</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 556,
+            "displayName": {
+                "text": "Fresh Fry Fish & Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: Closed",
+                    "Tuesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: 12:00\u2009\u2013\u200910:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-22T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJu76SsMMZdkgRWA9UTXpmoFQ",
+            "id": "ChIJu76SsMMZdkgRWA9UTXpmoFQ",
+            "nationalPhoneNumber": "020 8440 0779",
+            "internationalPhoneNumber": "+44 20 8440 0779",
+            "formattedAddress": "9, Mt Parade, Mount Pleasant, Cockfosters, London, Barnet EN4 9DD, UK",
+            "addressComponents": [
+                {
+                    "longText": "9",
+                    "shortText": "9",
+                    "types": [
+                        "subpremise"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Mount Parade",
+                    "shortText": "Mt Parade",
+                    "types": [
+                        "premise"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Mount Pleasant",
+                    "shortText": "Mount Pleasant",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Cockfosters",
+                    "shortText": "Cockfosters",
+                    "types": [
+                        "sublocality_level_1",
+                        "sublocality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN4 9DD",
+                    "shortText": "EN4 9DD",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6525312,
+                "longitude": -0.1608144
+            },
+            "rating": 4.5,
+            "websiteUri": "https://popeyesfishandchips.co.uk/",
+            "adrFormatAddress": "9, Mt Parade, <span class=\"street-address\">Mount Pleasant</span>, <span class=\"extended-address\">Cockfosters, London</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN4 9DD</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 90,
+            "displayName": {
+                "text": "Popeyes Fish and Chips Kebab",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJlU6eLqIXdkgROZ_QZEAHPW8",
+            "id": "ChIJlU6eLqIXdkgROZ_QZEAHPW8",
+            "nationalPhoneNumber": "020 8441 2839",
+            "internationalPhoneNumber": "+44 20 8441 2839",
+            "formattedAddress": "Chesterfield Parade, Bells Hill, Barnet EN5 2RD, UK",
+            "addressComponents": [
+                {
+                    "longText": "Chesterfield Parade",
+                    "shortText": "Chesterfield Parade",
+                    "types": [
+                        "premise"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Bells Hill",
+                    "shortText": "Bells Hill",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN5 2RD",
+                    "shortText": "EN5 2RD",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.646815499999995,
+                "longitude": -0.2152307
+            },
+            "rating": 4.6,
+            "websiteUri": "https://linebac.pw/barnet-fish-bar-zeahpw8",
+            "adrFormatAddress": "Chesterfield Parade, <span class=\"street-address\">Bells Hill</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN5 2RD</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 136,
+            "displayName": {
+                "text": "Barnet Fish Bar",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJHetL6UoYdkgRus8LHTfqUYo",
+            "id": "ChIJHetL6UoYdkgRus8LHTfqUYo",
+            "nationalPhoneNumber": "020 8449 1749",
+            "internationalPhoneNumber": "+44 20 8449 1749",
+            "formattedAddress": "261 E Barnet Rd, London, Barnet EN4 8SX, UK",
+            "addressComponents": [
+                {
+                    "longText": "261",
+                    "shortText": "261",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "East Barnet Road",
+                    "shortText": "E Barnet Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN4 8SX",
+                    "shortText": "EN4 8SX",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.642832299999995,
+                "longitude": -0.1633328
+            },
+            "rating": 4.6,
+            "websiteUri": "http://topsfishbar.square.site/",
+            "adrFormatAddress": "<span class=\"street-address\">261 East Barnet Road</span>, <span class=\"extended-address\">London</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN4 8SX</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 204,
+            "displayName": {
+                "text": "Tops Fish Bar",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJdRv0LTcYdkgR-8ir0FeJ8uo",
+            "id": "ChIJdRv0LTcYdkgR-8ir0FeJ8uo",
+            "nationalPhoneNumber": "020 8440 0311",
+            "internationalPhoneNumber": "+44 20 8440 0311",
+            "formattedAddress": "55 E Barnet Rd, New Barnet, London, Barnet EN4 8RN, UK",
+            "addressComponents": [
+                {
+                    "longText": "55",
+                    "shortText": "55",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "East Barnet Road",
+                    "shortText": "E Barnet Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "New Barnet",
+                    "shortText": "New Barnet",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN4 8RN",
+                    "shortText": "EN4 8RN",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.649699700000006,
+                "longitude": -0.1709131
+            },
+            "rating": 4.1,
+            "adrFormatAddress": "<span class=\"street-address\">55 East Barnet Road</span>, <span class=\"extended-address\">New Barnet, London</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN4 8RN</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 54,
+            "displayName": {
+                "text": "Cod's Plaice Fish and Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJZ_uGaZ4ZdkgRDCVK3KEyR6c",
+            "id": "ChIJZ_uGaZ4ZdkgRDCVK3KEyR6c",
+            "nationalPhoneNumber": "020 8368 0013",
+            "internationalPhoneNumber": "+44 20 8368 0013",
+            "formattedAddress": "33 Friern Barnet Rd, London N11 1ND, UK",
+            "addressComponents": [
+                {
+                    "longText": "33",
+                    "shortText": "33",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Friern Barnet Road",
+                    "shortText": "Friern Barnet Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "N11 1ND",
+                    "shortText": "N11 1ND",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6160485,
+                "longitude": -0.1433364
+            },
+            "rating": 4,
+            "adrFormatAddress": "<span class=\"street-address\">33 Friern Barnet Road</span>, <span class=\"locality\">London</span> <span class=\"postal-code\">N11 1ND</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 89,
+            "displayName": {
+                "text": "Kennedy's fish and chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:00:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJ2W7ckVAYdkgR4aeQul0uf4c",
+            "id": "ChIJ2W7ckVAYdkgR4aeQul0uf4c",
+            "nationalPhoneNumber": "020 8441 8365",
+            "internationalPhoneNumber": "+44 20 8441 8365",
+            "formattedAddress": "8 Cockfosters Parade, Barnet EN4 0BX, UK",
+            "addressComponents": [
+                {
+                    "longText": "8",
+                    "shortText": "8",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Cockfosters Parade",
+                    "shortText": "Cockfosters Parade",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN4 0BX",
+                    "shortText": "EN4 0BX",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.65089,
+                "longitude": -0.14984329999999998
+            },
+            "rating": 4.5,
+            "websiteUri": "http://www.chipperscockfosters.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">8 Cockfosters Parade</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN4 0BX</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 335,
+            "displayName": {
+                "text": "Chippers Ltd",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u200910:30\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u200910:30\u202fPM",
+                    "Sunday: 12:00\u2009\u2013\u200910:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJw9iFWCUYdkgRHyOtaVUoBXU",
+            "id": "ChIJw9iFWCUYdkgRHyOtaVUoBXU",
+            "nationalPhoneNumber": "020 8449 8553",
+            "internationalPhoneNumber": "+44 20 8449 8553",
+            "formattedAddress": "48 Bulwer Rd, Barnet EN5 5JB, UK",
+            "addressComponents": [
+                {
+                    "longText": "48",
+                    "shortText": "48",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Bulwer Road",
+                    "shortText": "Bulwer Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN5 5JB",
+                    "shortText": "EN5 5JB",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.651649,
+                "longitude": -0.17912899999999998
+            },
+            "rating": 3.6,
+            "websiteUri": "https://sea-life.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">48 Bulwer Road</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN5 5JB</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 112,
+            "displayName": {
+                "text": "Sea Life Fish & Chips & Kebab",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJC0FxJHgjdkgR4g8oFDG7XRY",
+            "id": "ChIJC0FxJHgjdkgR4g8oFDG7XRY",
+            "nationalPhoneNumber": "01707 644669",
+            "internationalPhoneNumber": "+44 1707 644669",
+            "formattedAddress": "26 Barnet Rd, Potters Bar EN6 2QU, UK",
+            "addressComponents": [
+                {
+                    "longText": "26",
+                    "shortText": "26",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Barnet Road",
+                    "shortText": "Barnet Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Potters Bar",
+                    "shortText": "Potters Bar",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Hertfordshire",
+                    "shortText": "Hertfordshire",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN6 2QU",
+                    "shortText": "EN6 2QU",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6912077,
+                "longitude": -0.17851260000000002
+            },
+            "rating": 4.2,
+            "adrFormatAddress": "<span class=\"street-address\">26 Barnet Road</span>, <span class=\"locality\">Potters Bar</span> <span class=\"postal-code\">EN6 2QU</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 120,
+            "displayName": {
+                "text": "The Fish & Chip Shop",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJId5Q8P0ZdkgRwtOGwYPXsJs",
+            "id": "ChIJId5Q8P0ZdkgRwtOGwYPXsJs",
+            "nationalPhoneNumber": "020 8371 8666",
+            "internationalPhoneNumber": "+44 20 8371 8666",
+            "formattedAddress": "142 Ballards Ln, Church End, London N3 2PA, UK",
+            "addressComponents": [
+                {
+                    "longText": "142",
+                    "shortText": "142",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Ballards Lane",
+                    "shortText": "Ballards Ln",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Church End",
+                    "shortText": "Church End",
+                    "types": [
+                        "neighborhood",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "N3 2PA",
+                    "shortText": "N3 2PA",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.605041,
+                "longitude": -0.18812579999999998
+            },
+            "rating": 4.3,
+            "websiteUri": "http://www.olympusrestaurant.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">142 Ballards Lane</span>, <span class=\"locality\">London</span> <span class=\"postal-code\">N3 2PA</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 396,
+            "displayName": {
+                "text": "Olympus Fish & Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u20099:45\u202fPM",
+                    "Sunday: 12:00\u2009\u2013\u20099:45\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJDXikDDAXdkgRhdsWHAp25B8",
+            "id": "ChIJDXikDDAXdkgRhdsWHAp25B8",
+            "nationalPhoneNumber": "020 8959 4318",
+            "internationalPhoneNumber": "+44 20 8959 4318",
+            "formattedAddress": "3 Salcombe Gardens, London NW7 2NU, UK",
+            "addressComponents": [
+                {
+                    "longText": "3",
+                    "shortText": "3",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Salcombe Gardens",
+                    "shortText": "Salcombe Gardens",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "NW7 2NU",
+                    "shortText": "NW7 2NU",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6091116,
+                "longitude": -0.2227216
+            },
+            "rating": 4.6,
+            "websiteUri": "http://frydays-ltd.edan.io/",
+            "adrFormatAddress": "<span class=\"street-address\">3 Salcombe Gardens</span>, <span class=\"locality\">London</span> <span class=\"postal-code\">NW7 2NU</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 242,
+            "displayName": {
+                "text": "Frydays Fish Bar Ltd",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: Closed",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:30\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-22T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJFbXYtQcZdkgR55wp7my7Sc8",
+            "id": "ChIJFbXYtQcZdkgR55wp7my7Sc8",
+            "nationalPhoneNumber": "020 8449 2216",
+            "internationalPhoneNumber": "+44 20 8449 2216",
+            "formattedAddress": "249 E Barnet Rd, London, Barnet EN4 8SS, UK",
+            "addressComponents": [
+                {
+                    "longText": "249",
+                    "shortText": "249",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "East Barnet Road",
+                    "shortText": "E Barnet Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Barnet",
+                    "shortText": "Barnet",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EN4 8SS",
+                    "shortText": "EN4 8SS",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6430511,
+                "longitude": -0.16388529999999998
+            },
+            "rating": 4.6,
+            "websiteUri": "http://pinchofsaltbistro.com/",
+            "adrFormatAddress": "<span class=\"street-address\">249 East Barnet Road</span>, <span class=\"extended-address\">London</span>, <span class=\"locality\">Barnet</span> <span class=\"postal-code\">EN4 8SS</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 173,
+            "displayName": {
+                "text": "Pinch of Salt Restaurant",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 27
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: 5:00\u2009\u2013\u20099:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "30"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJSwwDvM4ZdkgRO4rMEt9vvkw",
+            "id": "ChIJSwwDvM4ZdkgRO4rMEt9vvkw",
+            "nationalPhoneNumber": "020 3556 8180",
+            "internationalPhoneNumber": "+44 20 3556 8180",
+            "formattedAddress": "50-52 Totteridge Ln, London N20 9QJ, UK",
+            "addressComponents": [
+                {
+                    "longText": "50-52",
+                    "shortText": "50-52",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Totteridge Lane",
+                    "shortText": "Totteridge Ln",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "N20 9QJ",
+                    "shortText": "N20 9QJ",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6302971,
+                "longitude": -0.17854029999999999
+            },
+            "rating": 4.5,
+            "adrFormatAddress": "<span class=\"street-address\">50-52 Totteridge Lane</span>, <span class=\"locality\">London</span> <span class=\"postal-code\">N20 9QJ</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 131,
+            "displayName": {
+                "text": "Seventeen fish bar",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJN5kB2JMZdkgRPJh7Xsqfr0k",
+            "id": "ChIJN5kB2JMZdkgRPJh7Xsqfr0k",
+            "nationalPhoneNumber": "020 8361 9531",
+            "internationalPhoneNumber": "+44 20 8361 9531",
+            "formattedAddress": "225 Woodhouse Rd, London N12 9BD, UK",
+            "addressComponents": [
+                {
+                    "longText": "225",
+                    "shortText": "225",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Woodhouse Road",
+                    "shortText": "Woodhouse Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "London",
+                    "shortText": "London",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Greater London",
+                    "shortText": "Greater London",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "N12 9BD",
+                    "shortText": "N12 9BD",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 51.6128219,
+                "longitude": -0.1591452
+            },
+            "rating": 4.1,
+            "adrFormatAddress": "<span class=\"street-address\">225 Woodhouse Road</span>, <span class=\"locality\">London</span> <span class=\"postal-code\">N12 9BD</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 127,
+            "displayName": {
+                "text": "Friends",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 22,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        }
+    ]
+}
