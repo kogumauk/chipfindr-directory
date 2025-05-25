@@ -1,0 +1,816 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/restaurant-data-schema-v2.json",
+  "title": "Restaurant Detailed Information Schema",
+  "description": "Schema for restaurant-specific information complementing Google Places API data",
+  "type": "object",
+  "required": ["google_places_reference", "restaurant_name"],
+  "properties": {
+    "google_places_reference": {
+      "type": "object",
+      "required": ["place_id"],
+      "description": "Reference to Google Places API data",
+      "properties": {
+        "place_id": {
+          "type": "string",
+          "description": "Google Places API place ID"
+        },
+        "last_synced": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this data was last synced with Google Places API"
+        }
+      }
+    },
+    "restaurant_name": {
+      "type": "string",
+      "description": "Restaurant name (for reference/backup)"
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Backup coordinates (synced from Google Places)",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "ownership_and_concept": {
+      "type": "object",
+      "description": "Restaurant ownership and concept information",
+      "properties": {
+        "owner": {
+          "type": "string",
+          "description": "Restaurant owner name"
+        },
+        "owner_credentials": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Owner's professional credentials and qualifications"
+        },
+        "concept": {
+          "type": "string",
+          "description": "Restaurant concept or theme"
+        },
+        "establishment_year": {
+          "type": "integer",
+          "minimum": 1800,
+          "description": "Year the restaurant was established"
+        },
+        "ownership_type": {
+          "type": "string",
+          "enum": ["independent", "franchise", "chain", "family_owned"],
+          "description": "Type of ownership structure"
+        },
+        "chain_information": {
+          "type": "object",
+          "properties": {
+            "chain_name": {"type": "string"},
+            "total_locations": {"type": "integer"},
+            "other_locations": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "operational_details": {
+      "type": "object",
+      "description": "Detailed operational information beyond basic Google Places data",
+      "properties": {
+        "service_style": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["table_service", "counter_service", "takeaway", "delivery", "drive_through", "buffet", "self_service"]
+          },
+          "description": "Types of service offered"
+        },
+        "seating_capacity": {
+          "type": "object",
+          "properties": {
+            "indoor": {"type": "integer", "minimum": 0},
+            "outdoor": {"type": "integer", "minimum": 0},
+            "private_dining": {"type": "integer", "minimum": 0},
+            "bar_seating": {"type": "integer", "minimum": 0}
+          }
+        },
+        "reservations": {
+          "type": "object",
+          "properties": {
+            "accepted": {"type": "boolean"},
+            "required": {"type": "boolean"},
+            "online_booking": {"type": "boolean"},
+            "booking_platform": {"type": "string"}
+          }
+        },
+        "seasonal_operations": {
+          "type": "object",
+          "properties": {
+            "seasonal": {"type": "boolean"},
+            "peak_season": {"type": "string"},
+            "off_season_hours": {"type": "string"},
+            "seasonal_menu_changes": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "cuisine_and_menu": {
+      "type": "object",
+      "required": ["primary_cuisine"],
+      "description": "Detailed cuisine and menu information",
+      "properties": {
+        "primary_cuisine": {
+          "type": "string",
+          "description": "Primary cuisine type"
+        },
+        "cuisine_tags": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Additional cuisine descriptors"
+        },
+        "specialties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item_name": {"type": "string"},
+              "description": {"type": "string"},
+              "price_range": {"type": "string"},
+              "signature_dish": {"type": "boolean"}
+            }
+          },
+          "description": "Restaurant specialties and signature dishes"
+        },
+        "sourcing": {
+          "type": "object",
+          "properties": {
+            "local_sourcing": {"type": "boolean"},
+            "organic_options": {"type": "boolean"},
+            "suppliers": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "fishing_vessel": {
+              "type": "object",
+              "properties": {
+                "own_boat": {"type": "boolean"},
+                "boat_name": {"type": "string"},
+                "daily_catch": {"type": "boolean"}
+              }
+            }
+          }
+        },
+        "dietary_accommodations": {
+          "type": "object",
+          "properties": {
+            "vegetarian": {
+              "type": "object",
+              "properties": {
+                "available": {"type": "boolean"},
+                "dedicated_menu": {"type": "boolean"},
+                "item_count": {"type": "integer"}
+              }
+            },
+            "vegan": {
+              "type": "object",
+              "properties": {
+                "available": {"type": "boolean"},
+                "dedicated_menu": {"type": "boolean"},
+                "item_count": {"type": "integer"}
+              }
+            },
+            "gluten_free": {
+              "type": "object",
+              "properties": {
+                "available": {"type": "boolean"},
+                "certified_preparation": {"type": "boolean"},
+                "staff_trained": {"type": "boolean"},
+                "separate_preparation_area": {"type": "boolean"},
+                "customer_satisfaction": {"type": "string"}
+              }
+            },
+            "allergen_awareness": {
+              "type": "object",
+              "properties": {
+                "comprehensive_labeling": {"type": "boolean"},
+                "staff_training_level": {"type": "string"},
+                "allergen_matrix_available": {"type": "boolean"}
+              }
+            },
+            "children_options": {
+              "type": "object",
+              "properties": {
+                "kids_menu": {"type": "boolean"},
+                "portion_sizes": {"type": "boolean"},
+                "healthy_options": {"type": "boolean"}
+              }
+            }
+          }
+        },
+        "beverage_program": {
+          "type": "object",
+          "properties": {
+            "alcohol_license": {"type": "boolean"},
+            "wine_list": {
+              "type": "object",
+              "properties": {
+                "available": {"type": "boolean"},
+                "selection_size": {"type": "string"},
+                "local_wines": {"type": "boolean"},
+                "sommelier": {"type": "boolean"}
+              }
+            },
+            "craft_beer": {
+              "type": "object",
+              "properties": {
+                "available": {"type": "boolean"},
+                "local_breweries": {"type": "boolean"},
+                "tap_count": {"type": "integer"}
+              }
+            },
+            "specialty_drinks": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "customer_experience": {
+      "type": "object",
+      "description": "Customer experience and service information",
+      "properties": {
+        "atmosphere": {
+          "type": "object",
+          "properties": {
+            "ambiance": {"type": "string"},
+            "noise_level": {"type": "string", "enum": ["quiet", "moderate", "lively", "loud"]},
+            "dress_code": {"type": "string"},
+            "music": {"type": "string"},
+            "lighting": {"type": "string"}
+          }
+        },
+        "target_demographics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["families", "couples", "business_diners", "tourists", "locals", "young_adults", "seniors"]
+          }
+        },
+        "special_features": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Unique features or amenities"
+        },
+        "accessibility_details": {
+          "type": "object",
+          "properties": {
+            "wheelchair_accessible": {"type": "boolean"},
+            "accessible_restroom": {"type": "boolean"},
+            "braille_menu": {"type": "boolean"},
+            "hearing_loop": {"type": "boolean"},
+            "large_print_menu": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "reviews_and_reputation": {
+      "type": "object",
+      "description": "Detailed review analysis beyond basic ratings",
+      "properties": {
+        "review_sources": {
+          "type": "object",
+          "properties": {
+            "tripadvisor": {
+              "type": "object",
+              "properties": {
+                "rating": {"type": "number", "minimum": 1, "maximum": 5},
+                "review_count": {"type": "integer"},
+                "ranking": {"type": "string"},
+                "certificate_of_excellence": {"type": "boolean"}
+              }
+            },
+            "yelp": {
+              "type": "object",
+              "properties": {
+                "rating": {"type": "number", "minimum": 1, "maximum": 5},
+                "review_count": {"type": "integer"}
+              }
+            },
+            "restaurant_guru": {
+              "type": "object",
+              "properties": {
+                "rating": {"type": "number", "minimum": 1, "maximum": 5},
+                "review_count": {"type": "integer"}
+              }
+            }
+          }
+        },
+        "sentiment_analysis": {
+          "type": "object",
+          "properties": {
+            "overall_sentiment": {"type": "string", "enum": ["very_positive", "positive", "neutral", "negative", "very_negative"]},
+            "common_praise": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Most frequently mentioned positive aspects"
+            },
+            "common_criticisms": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Most frequently mentioned negative aspects"
+            },
+            "trending_topics": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Recently trending topics in reviews"
+            }
+          }
+        },
+        "staff_recognition": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "role": {"type": "string"},
+              "recognition_type": {"type": "string"}
+            }
+          },
+          "description": "Staff members specifically mentioned in reviews"
+        }
+      }
+    },
+    "competitive_analysis": {
+      "type": "object",
+      "description": "Market positioning and competitive information",
+      "properties": {
+        "local_ranking": {
+          "type": "object",
+          "properties": {
+            "category_ranking": {"type": "string"},
+            "overall_ranking": {"type": "string"},
+            "comparison_note": {"type": "string"}
+          }
+        },
+        "unique_selling_propositions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Key differentiators from competitors"
+        },
+        "target_market_positioning": {"type": "string"},
+        "competitive_advantages": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "areas_for_improvement": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "sustainability_practices": {
+      "type": "object",
+      "description": "Environmental and social responsibility practices",
+      "properties": {
+        "certifications": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Environmental or ethical certifications held"
+        },
+        "sustainable_sourcing": {
+          "type": "object",
+          "properties": {
+            "local_percentage": {"type": "number", "minimum": 0, "maximum": 100},
+            "organic_percentage": {"type": "number", "minimum": 0, "maximum": 100},
+            "fair_trade": {"type": "boolean"},
+            "sustainable_seafood": {"type": "boolean"}
+          }
+        },
+        "waste_management": {
+          "type": "object",
+          "properties": {
+            "recycling_program": {"type": "boolean"},
+            "composting": {"type": "boolean"},
+            "food_waste_reduction": {"type": "string"}
+          }
+        },
+        "energy_efficiency": {
+          "type": "object",
+          "properties": {
+            "renewable_energy": {"type": "boolean"},
+            "energy_efficient_equipment": {"type": "boolean"},
+            "led_lighting": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "business_intelligence": {
+      "type": "object",
+      "description": "Business performance and operational insights",
+      "properties": {
+        "peak_times": {
+          "type": "object",
+          "properties": {
+            "busiest_days": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "peak_hours": {"type": "string"},
+            "seasonal_trends": {"type": "string"}
+          }
+        },
+        "average_wait_times": {
+          "type": "object",
+          "properties": {
+            "weekend_evening": {"type": "string"},
+            "weekday_lunch": {"type": "string"},
+            "holiday_periods": {"type": "string"}
+          }
+        },
+        "customer_loyalty": {
+          "type": "object",
+          "properties": {
+            "repeat_customer_rate": {"type": "string"},
+            "loyalty_program": {"type": "boolean"},
+            "local_customer_base": {"type": "string"}
+          }
+        }
+      }
+    },
+    "photos": {
+      "type": "object",
+      "description": "Restaurant photography and visual content",
+      "properties": {
+        "featured_images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "category"],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "Image URL"
+              },
+              "category": {
+                "type": "string",
+                "enum": ["exterior", "interior", "food", "menu", "staff", "ambiance", "logo"],
+                "description": "Type of photo"
+              },
+              "caption": {"type": "string"},
+              "alt_text": {"type": "string"},
+              "is_primary": {"type": "boolean"},
+              "photographer_credit": {"type": "string"},
+              "date_taken": {"type": "string", "format": "date"},
+              "source": {
+                "type": "string",
+                "enum": ["professional", "owner", "customer", "social_media", "review_site"]
+              }
+            }
+          }
+        },
+        "gallery_organization": {
+          "type": "object",
+          "properties": {
+            "food_photos_count": {"type": "integer", "minimum": 0},
+            "interior_photos_count": {"type": "integer", "minimum": 0},
+            "exterior_photos_count": {"type": "integer", "minimum": 0},
+            "menu_photos_available": {"type": "boolean"},
+            "dish_photography_quality": {
+              "type": "string",
+              "enum": ["professional", "good", "average", "poor"]
+            }
+          }
+        },
+        "user_generated_content": {
+          "type": "object",
+          "properties": {
+            "instagram_hashtag": {"type": "string"},
+            "photo_sharing_encouraged": {"type": "boolean"},
+            "ugc_quality_assessment": {"type": "string"}
+          }
+        }
+      }
+    },
+    "social_media_presence": {
+      "type": "object",
+      "description": "Social media accounts and digital presence",
+      "properties": {
+        "platforms": {
+          "type": "object",
+          "properties": {
+            "facebook": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "handle": {"type": "string"},
+                "followers": {"type": "integer", "minimum": 0},
+                "verified": {"type": "boolean"},
+                "last_post_date": {"type": "string", "format": "date"},
+                "engagement_level": {
+                  "type": "string",
+                  "enum": ["high", "medium", "low", "inactive"]
+                },
+                "response_rate": {"type": "string"}
+              }
+            },
+            "instagram": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "handle": {"type": "string"},
+                "followers": {"type": "integer", "minimum": 0},
+                "verified": {"type": "boolean"},
+                "last_post_date": {"type": "string", "format": "date"},
+                "engagement_level": {
+                  "type": "string",
+                  "enum": ["high", "medium", "low", "inactive"]
+                },
+                "content_quality": {
+                  "type": "string",
+                  "enum": ["professional", "good", "average", "poor"]
+                },
+                "stories_active": {"type": "boolean"}
+              }
+            },
+            "twitter": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "handle": {"type": "string"},
+                "followers": {"type": "integer", "minimum": 0},
+                "verified": {"type": "boolean"},
+                "last_tweet_date": {"type": "string", "format": "date"},
+                "engagement_level": {
+                  "type": "string",
+                  "enum": ["high", "medium", "low", "inactive"]
+                }
+              }
+            },
+            "tiktok": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "handle": {"type": "string"},
+                "followers": {"type": "integer", "minimum": 0},
+                "verified": {"type": "boolean"},
+                "content_style": {"type": "string"}
+              }
+            },
+            "youtube": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "channel_name": {"type": "string"},
+                "subscribers": {"type": "integer", "minimum": 0},
+                "content_type": {"type": "string"}
+              }
+            },
+            "linkedin": {
+              "type": "object",
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "company_page": {"type": "boolean"},
+                "employee_count": {"type": "integer", "minimum": 0}
+              }
+            }
+          }
+        },
+        "social_media_strategy": {
+          "type": "object",
+          "properties": {
+            "posting_frequency": {"type": "string"},
+            "content_themes": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "customer_interaction": {
+              "type": "string",
+              "enum": ["excellent", "good", "moderate", "poor", "none"]
+            },
+            "promotional_campaigns": {"type": "boolean"},
+            "influencer_partnerships": {"type": "boolean"}
+          }
+        },
+        "online_reputation_management": {
+          "type": "object",
+          "properties": {
+            "monitors_mentions": {"type": "boolean"},
+            "responds_to_reviews": {"type": "boolean"},
+            "crisis_management": {"type": "string"},
+            "brand_consistency": {
+              "type": "string",
+              "enum": ["excellent", "good", "moderate", "poor"]
+            }
+          }
+        }
+      }
+    },
+    "delivery_services": {
+      "type": "object",
+      "description": "Comprehensive delivery and takeout service information",
+      "properties": {
+        "third_party_platforms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["platform_name", "available"],
+            "properties": {
+              "platform_name": {
+                "type": "string",
+                "enum": ["uber_eats", "deliveroo", "just_eat", "doordash", "grubhub", "postmates", "seamless", "caviar", "other"]
+              },
+              "available": {"type": "boolean"},
+              "commission_rate": {"type": "number", "minimum": 0, "maximum": 50},
+              "delivery_radius": {"type": "string"},
+              "minimum_order": {
+                "type": "object",
+                "properties": {
+                  "amount": {"type": "number", "minimum": 0},
+                  "currency": {"type": "string", "pattern": "^[A-Z]{3}$"}
+                }
+              },
+              "delivery_fee": {
+                "type": "object",
+                "properties": {
+                  "base_fee": {"type": "number", "minimum": 0},
+                  "variable_fee": {"type": "string"},
+                  "free_delivery_threshold": {"type": "number", "minimum": 0}
+                }
+              },
+              "average_delivery_time": {"type": "string"},
+              "rating_on_platform": {"type": "number", "minimum": 1, "maximum": 5},
+              "reviews_on_platform": {"type": "integer", "minimum": 0}
+            }
+          }
+        },
+        "in_house_delivery": {
+          "type": "object",
+          "properties": {
+            "available": {"type": "boolean"},
+            "delivery_area": {
+              "type": "object",
+              "properties": {
+                "radius_miles": {"type": "number", "minimum": 0},
+                "specific_areas": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "postcodes_covered": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            },
+            "delivery_hours": {
+              "type": "object",
+              "properties": {
+                "same_as_restaurant": {"type": "boolean"},
+                "custom_schedule": {
+                  "type": "object",
+                  "properties": {
+                    "monday": {"type": "string"},
+                    "tuesday": {"type": "string"},
+                    "wednesday": {"type": "string"},
+                    "thursday": {"type": "string"},
+                    "friday": {"type": "string"},
+                    "saturday": {"type": "string"},
+                    "sunday": {"type": "string"}
+                  }
+                }
+              }
+            },
+            "delivery_fleet": {
+              "type": "object",
+              "properties": {
+                "vehicle_count": {"type": "integer", "minimum": 0},
+                "vehicle_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["bicycle", "motorbike", "car", "van"]
+                  }
+                },
+                "driver_employment": {
+                  "type": "string",
+                  "enum": ["employed", "contracted", "mixed"]
+                }
+              }
+            },
+            "delivery_features": {
+              "type": "object",
+              "properties": {
+                "heated_bags": {"type": "boolean"},
+                "tracking_system": {"type": "boolean"},
+                "contactless_delivery": {"type": "boolean"},
+                "estimated_delivery_time": {"type": "string"},
+                "delivery_guarantee": {"type": "string"}
+              }
+            }
+          }
+        },
+        "takeaway_service": {
+          "type": "object",
+          "properties": {
+            "available": {"type": "boolean"},
+            "ordering_methods": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["phone", "online", "app", "in_person", "social_media"]
+              }
+            },
+            "preparation_time": {
+              "type": "object",
+              "properties": {
+                "average_wait": {"type": "string"},
+                "peak_time_wait": {"type": "string"},
+                "pre_order_available": {"type": "boolean"}
+              }
+            },
+            "packaging": {
+              "type": "object",
+              "properties": {
+                "eco_friendly": {"type": "boolean"},
+                "temperature_retention": {"type": "string"},
+                "branded_packaging": {"type": "boolean"}
+              }
+            },
+            "special_offers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "offer_name": {"type": "string"},
+                  "description": {"type": "string"},
+                  "days_available": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "discount_percentage": {"type": "number", "minimum": 0, "maximum": 100}
+                }
+              }
+            }
+          }
+        },
+        "delivery_performance": {
+          "type": "object",
+          "properties": {
+            "overall_rating": {"type": "number", "minimum": 1, "maximum": 5},
+            "on_time_percentage": {"type": "number", "minimum": 0, "maximum": 100},
+            "customer_satisfaction": {"type": "string"},
+            "common_delivery_issues": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "delivery_volume": {
+              "type": "object",
+              "properties": {
+                "percentage_of_total_sales": {"type": "number", "minimum": 0, "maximum": 100},
+                "peak_delivery_days": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "data_quality": {
+      "type": "object",
+      "description": "Information about data sources and quality",
+      "properties": {
+        "last_updated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "data_sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Sources used to compile this information"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": ["verified", "partially_verified", "unverified"]
+        },
+        "confidence_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence level in the data accuracy (0-1)"
+        }
+      }
+    }
+  }
+}

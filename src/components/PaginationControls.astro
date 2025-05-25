@@ -1,0 +1,42 @@
+---
+interface Props {
+  page: {
+    currentPage: number;
+    totalPages: number;
+    url: {
+      prev: string | undefined;
+      next: string | undefined;
+    };
+  };
+}
+
+const { page } = Astro.props;
+---
+
+<nav class="pagination-controls">
+  {page.url.prev && <a href={page.url.prev} class="pagination-link">Previous</a>}
+  <span>Page {page.currentPage} of {page.totalPages}</span>
+  {page.url.next && <a href={page.url.next} class="pagination-link">Next</a>}
+</nav>
+
+<style>
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .pagination-link {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .pagination-link:hover {
+    background-color: #eee;
+  }
+</style>

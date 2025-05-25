@@ -1,0 +1,2767 @@
+{
+    "metadata": {
+        "request_parameters": {
+            "textQuery": "Fish and Chip shops in Brixham, Devon",
+            "maxResultCount": 20
+        },
+        "field_mask_used": [
+            "nextPageToken",
+            "places.id",
+            "places.name",
+            "places.addressComponents",
+            "places.adrFormatAddress",
+            "places.formattedAddress",
+            "places.location",
+            "places.displayName",
+            "places.businessStatus",
+            "places.primaryType",
+            "places.primaryTypeDisplayName",
+            "places.currentOpeningHours",
+            "places.internationalPhoneNumber",
+            "places.nationalPhoneNumber",
+            "places.priceLevel",
+            "places.priceRange",
+            "places.rating",
+            "places.userRatingCount",
+            "places.websiteUri"
+        ],
+        "request_timestamp": "2025-04-20T23:11:41.835713",
+        "response_details": {
+            "timestamp": "2025-04-20T23:11:41.835713",
+            "status_code": 200,
+            "total_results": 10
+        }
+    },
+    "results": [
+        {
+            "name": "places/ChIJTcibdN4QbUgRIZQuQznkgLA",
+            "id": "ChIJTcibdN4QbUgRIZQuQznkgLA",
+            "formattedAddress": "22 The Quay, Brixham TQ5 8AW, UK",
+            "addressComponents": [
+                {
+                    "longText": "22",
+                    "shortText": "22",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "The Quay",
+                    "shortText": "The Quay",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "vi"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8AW",
+                    "shortText": "TQ5 8AW",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3973947,
+                "longitude": -3.5128581
+            },
+            "rating": 4.6,
+            "websiteUri": "http://brixhamfishrestaurant.com/",
+            "adrFormatAddress": "<span class=\"street-address\">22 The Quay</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8AW</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 484,
+            "displayName": {
+                "text": "Brixham Fish Restaurant & Takeaway",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJbwbrLMgQbUgRf8Vl9tRHASE",
+            "id": "ChIJbwbrLMgQbUgRf8Vl9tRHASE",
+            "nationalPhoneNumber": "01803 340908",
+            "internationalPhoneNumber": "+44 1803 340908",
+            "formattedAddress": "10 Summercourt Way, Brixham TQ5 0DY, UK",
+            "addressComponents": [
+                {
+                    "longText": "10",
+                    "shortText": "10",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Summercourt Way",
+                    "shortText": "Summercourt Way",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 0DY",
+                    "shortText": "TQ5 0DY",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.385506199999995,
+                "longitude": -3.5301746
+            },
+            "rating": 4.4,
+            "websiteUri": "https://www.fishionados.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">10 Summercourt Way</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 0DY</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+            "userRatingCount": 217,
+            "displayName": {
+                "text": "Fishionados",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: Closed",
+                    "Tuesday: 4:30\u2009\u2013\u20098:00\u202fPM",
+                    "Wednesday: 4:30\u2009\u2013\u20098:00\u202fPM",
+                    "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+                    "Friday: 4:30\u2009\u2013\u20098:30\u202fPM",
+                    "Saturday: 4:30\u2009\u2013\u20098:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "nextOpenTime": "2025-04-22T15:30:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJiUQvht4QbUgRYfSYTTk1c4k",
+            "id": "ChIJiUQvht4QbUgRYfSYTTk1c4k",
+            "nationalPhoneNumber": "01803 859585",
+            "internationalPhoneNumber": "+44 1803 859585",
+            "formattedAddress": "68-74 Fore St, Brixham TQ5 8AF, UK",
+            "addressComponents": [
+                {
+                    "longText": "68-74",
+                    "shortText": "68-74",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Fore Street",
+                    "shortText": "Fore St",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8AF",
+                    "shortText": "TQ5 8AF",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.395843899999996,
+                "longitude": -3.5126364
+            },
+            "rating": 4.3,
+            "websiteUri": "http://simplyfishrestaurant.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">68-74 Fore Street</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8AF</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 1200,
+            "displayName": {
+                "text": "Simply Fish",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Seafood Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "seafood_restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJq56fOi0RbUgRcXYx37-vD3E",
+            "id": "ChIJq56fOi0RbUgRcXYx37-vD3E",
+            "nationalPhoneNumber": "01803 714416",
+            "internationalPhoneNumber": "+44 1803 714416",
+            "formattedAddress": "1 The Strand, Brixham TQ5 8EH, UK",
+            "addressComponents": [
+                {
+                    "longText": "1",
+                    "shortText": "1",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "The Strand",
+                    "shortText": "The Strand",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8EH",
+                    "shortText": "TQ5 8EH",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3959094,
+                "longitude": -3.5127097999999997
+            },
+            "rating": 4.3,
+            "websiteUri": "http://www.thedutchy.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">1 The Strand</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8EH</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 25,
+            "displayName": {
+                "text": "The Dutchy",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 18,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20097:00\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20096:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJl9mKF94QbUgRCRbAeCjhGXY",
+            "id": "ChIJl9mKF94QbUgRCRbAeCjhGXY",
+            "nationalPhoneNumber": "01803 850872",
+            "internationalPhoneNumber": "+44 1803 850872",
+            "formattedAddress": "New Fish Quay, Brixham TQ5 8AW, UK",
+            "addressComponents": [
+                {
+                    "longText": "New Fish Quay",
+                    "shortText": "New Fish Quay",
+                    "types": [
+                        "premise"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8AW",
+                    "shortText": "TQ5 8AW",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.397940999999996,
+                "longitude": -3.512194
+            },
+            "rating": 4.5,
+            "websiteUri": "https://therockfish.co.uk/pages/brixham-seafood-restaurant?utm_source=brixham-google&utm_medium=referral&utm_campaign=third-party-tracking",
+            "adrFormatAddress": "New Fish Quay, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8AW</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 2688,
+            "displayName": {
+                "text": "Rockfish",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Seafood Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "seafood_restaurant"
+        },
+        {
+            "name": "places/ChIJmz3DaR8RbUgRU3mGF_gOaiI",
+            "id": "ChIJmz3DaR8RbUgRU3mGF_gOaiI",
+            "nationalPhoneNumber": "01803 856738",
+            "internationalPhoneNumber": "+44 1803 856738",
+            "formattedAddress": "Berry Head Rd, Brixham TQ5 9AF, UK",
+            "addressComponents": [
+                {
+                    "longText": "Berry Head Road",
+                    "shortText": "Berry Head Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 9AF",
+                    "shortText": "TQ5 9AF",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.399718,
+                "longitude": -3.5039601
+            },
+            "rating": 4.5,
+            "websiteUri": "http://breakwaterbistro.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">Berry Head Road</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 9AF</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 1613,
+            "displayName": {
+                "text": "Breakwater Coffee Shop & Bistro",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 9,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Tuesday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Wednesday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Thursday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Friday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+                    "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T08:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJ6frLO94QbUgRoO1Vmspj4ng",
+            "id": "ChIJ6frLO94QbUgRoO1Vmspj4ng",
+            "nationalPhoneNumber": "01803 854468",
+            "internationalPhoneNumber": "+44 1803 854468",
+            "formattedAddress": "Prince William Quay, Berry Head Rd, Brixham TQ5 9BW, UK",
+            "addressComponents": [
+                {
+                    "longText": "Prince William Quay",
+                    "shortText": "Prince William Quay",
+                    "types": [
+                        "premise"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Berry Head Road",
+                    "shortText": "Berry Head Rd",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 9BW",
+                    "shortText": "TQ5 9BW",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3976172,
+                "longitude": -3.5082549
+            },
+            "rating": 4.3,
+            "websiteUri": "http://theprincewilliam.co.uk/",
+            "adrFormatAddress": "Prince William Quay, <span class=\"street-address\">Berry Head Road</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 9BW</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 1948,
+            "displayName": {
+                "text": "The Prince William",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 22,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+                    "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:30\u202fPM",
+                    "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+                    "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+                    "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+                    "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+                    "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "30"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJZd-eudsQbUgRoJG2PBj9NG4",
+            "id": "ChIJZd-eudsQbUgRoJG2PBj9NG4",
+            "nationalPhoneNumber": "01803 855771",
+            "internationalPhoneNumber": "+44 1803 855771",
+            "formattedAddress": "64 Bolton St, Brixham TQ5 9DH, UK",
+            "addressComponents": [
+                {
+                    "longText": "64",
+                    "shortText": "64",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Bolton Street",
+                    "shortText": "Bolton St",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 9DH",
+                    "shortText": "TQ5 9DH",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3917463,
+                "longitude": -3.5145964
+            },
+            "rating": 4.5,
+            "websiteUri": "http://www.davids-chippy.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">64 Bolton Street</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 9DH</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 552,
+            "displayName": {
+                "text": "David's Fish & Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 21,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 13,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 16,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 20,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u20091:30\u202fPM, 5:00\u2009\u2013\u20098:30\u202fPM",
+                    "Tuesday: 12:00\u2009\u2013\u20091:30\u202fPM, 5:00\u2009\u2013\u20098:30\u202fPM",
+                    "Wednesday: 12:00\u2009\u2013\u20091:30\u202fPM, 5:00\u2009\u2013\u20098:30\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u20091:30\u202fPM, 5:00\u2009\u2013\u20098:30\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u20091:30\u202fPM, 4:30\u2009\u2013\u20099:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u20091:30\u202fPM, 4:30\u2009\u2013\u20098:30\u202fPM",
+                    "Sunday: 5:00\u2009\u2013\u20098:30\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "meal_takeaway",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJ5ZUoqGcRbUgR9UzmtPOl8NQ",
+            "id": "ChIJ5ZUoqGcRbUgR9UzmtPOl8NQ",
+            "nationalPhoneNumber": "01803 855344",
+            "internationalPhoneNumber": "+44 1803 855344",
+            "formattedAddress": "27A Fore St, Brixham TQ5 8AA, UK",
+            "addressComponents": [
+                {
+                    "longText": "27A",
+                    "shortText": "27A",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Fore Street",
+                    "shortText": "Fore St",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8AA",
+                    "shortText": "TQ5 8AA",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3944504,
+                "longitude": -3.5144737
+            },
+            "rating": 3.6,
+            "websiteUri": "https://www.brixhamgrill.com/",
+            "adrFormatAddress": "<span class=\"street-address\">27A Fore Street</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8AA</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 43,
+            "displayName": {
+                "text": "Brixham Grill & Fish Bar",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Fast Food Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": true,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 0,
+                            "minute": 0,
+                            "truncated": true,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 0,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 23,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 23,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 23,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 23,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 23,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 0,
+                            "minute": 45,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 16,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 23,
+                            "minute": 59,
+                            "truncated": true,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 4:00\u2009\u2013\u200911:45\u202fPM",
+                    "Tuesday: 4:00\u2009\u2013\u200911:45\u202fPM",
+                    "Wednesday: 4:00\u2009\u2013\u200911:45\u202fPM",
+                    "Thursday: 4:00\u2009\u2013\u200911:45\u202fPM",
+                    "Friday: 4:00\u202fPM\u2009\u2013\u200912:45\u202fAM",
+                    "Saturday: 4:00\u202fPM\u2009\u2013\u200912:45\u202fAM",
+                    "Sunday: 4:00\u2009\u2013\u200911:45\u202fPM"
+                ],
+                "nextCloseTime": "2025-04-20T22:45:00Z"
+            },
+            "primaryType": "fast_food_restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "1"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                }
+            }
+        },
+        {
+            "name": "places/ChIJpzL26jQRbUgRXmbHZkMxcZs",
+            "id": "ChIJpzL26jQRbUgRXmbHZkMxcZs",
+            "nationalPhoneNumber": "01803 853357",
+            "internationalPhoneNumber": "+44 1803 853357",
+            "formattedAddress": "3 The Strand, Brixham TQ5 8EH, UK",
+            "addressComponents": [
+                {
+                    "longText": "3",
+                    "shortText": "3",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "The Strand",
+                    "shortText": "The Strand",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Brixham",
+                    "shortText": "Brixham",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Torbay",
+                    "shortText": "Torbay",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "TQ5 8EH",
+                    "shortText": "TQ5 8EH",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.3959675,
+                "longitude": -3.5129619
+            },
+            "rating": 4.1,
+            "adrFormatAddress": "<span class=\"street-address\">3 The Strand</span>, <span class=\"locality\">Brixham</span> <span class=\"postal-code\">TQ5 8EH</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 22,
+            "displayName": {
+                "text": "Chish & Fipps",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Takeout Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 19,
+                            "minute": 30,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Tuesday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Wednesday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Thursday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Friday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Saturday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM",
+                    "Sunday: 11:30\u202fAM\u2009\u2013\u20097:30\u202fPM"
+                ],
+                "nextOpenTime": "2025-04-21T10:30:00Z"
+            },
+            "primaryType": "meal_takeaway"
+        }
+    ]
+}

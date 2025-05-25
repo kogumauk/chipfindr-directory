@@ -1,0 +1,129 @@
+---
+import type { BusinessListing } from '../types/BusinessListing';
+import { 
+  formatRating, 
+  getStarRating, 
+  formatPriceLevel, 
+  isCurrentlyOpen, 
+  getTodaysHours,
+  getBusinessTypeText,
+  formatPhoneNumber,
+  generateBusinessSlug
+} from '../utils/formatters';
+
+interface Props {
+  business: BusinessListing;
+  showDistance?: boolean;
+}
+
+const { business, showDistance = false } = Astro.props;
+
+const businessSlug = generateBusinessSlug(business);
+const isOpen = isCurrentlyOpen(business);
+const todaysHours = getTodaysHours(business);
+const priceLevel = formatPriceLevel(business.priceLevel);
+const businessType = getBusinessTypeText(business);
+---
+
+<article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+  <!-- Business Image Placeholder -->
+  <div class="h-48 bg-gradient-to-r from-blue-100 to-blue-200 relative">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="text-blue-600 text-6xl">🐟</div>
+    </div>
+    {isOpen && (
+      <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+        Open Now
+      </div>
+    )}
+    {business.rating && (
+      <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 rounded-full px-2 py-1 flex items-center gap-1">
+        <span class="text-yellow-500 text-sm">{getStarRating(business.rating)}</span>
+        <span class="text-sm font-medium">{formatRating(business.rating)}</span>
+        {business.reviewCount && (
+          <span class="text-xs text-gray-600">({business.reviewCount})</span>
+        )}
+      </div>
+    )}
+  </div>
+
+  <!-- Business Details -->
+  <div class="p-4">
+    <!-- Header -->
+    <div class="mb-3">
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 line-clamp-2">
+        <a href={`/business/${businessSlug}`} class="hover:text-blue-600 transition-colors">
+          {business.name.text}
+        </a>
+      </h3>
+      <div class="flex items-center gap-2 text-sm text-gray-600">
+        <span>{businessType}</span>
+        {priceLevel && (
+          <>
+            <span>•</span>
+            <span class="text-green-600 font-medium">{priceLevel}</span>
+          </>
+        )}
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+      <p class="text-sm text-gray-600 line-clamp-2">
+        📍 {business.formattedAddress}
+      </p>
+    </div>
+
+    <!-- Opening Hours -->
+    {todaysHours && (
+      <div class="mb-3 text-sm">
+        <span class="text-gray-500">Today:</span>
+        <span class={`ml-1 ${isOpen ? 'text-green-600' : 'text-red-600'}`}>
+          {todaysHours}
+        </span>
+      </div>
+    )}
+
+    <!-- Contact Info -->
+    <div class="flex items-center justify-between">
+      <div class="flex gap-3">
+        {business.nationalPhoneNumber && (
+          <a 
+            href={`tel:${business.nationalPhoneNumber}`}
+            class="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            title="Call now"
+          >
+            📞 Call
+          </a>
+        )}
+        {business.websiteUri && (
+          <a 
+            href={business.websiteUri}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            title="Visit website"
+          >
+            🌐 Website
+          </a>
+        )}
+      </div>
+      
+      <a 
+        href={`/business/${businessSlug}`}
+        class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-medium hover:bg-blue-700 transition-colors"
+      >
+        View Details
+      </a>
+    </div>
+  </div>
+</article>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

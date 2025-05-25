@@ -1,0 +1,42 @@
+---
+interface Props {
+  ratingValue: number;
+  ratingCount?: number;
+  reviews?: { author: string; text: string; rating: number }[];
+}
+
+const { ratingValue, ratingCount, reviews } = Astro.props;
+
+const fullStars = Math.floor(ratingValue);
+const hasHalfStar = ratingValue % 1 >= 0.5;
+const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+---
+
+<div class="rating-display flex items-center space-x-2">
+  <div class="stars flex text-yellow-500 text-xl">
+    {Array(fullStars).fill('★').map(star => <span class="star">{star}</span>)}
+    {hasHalfStar && <span class="star">★</span>} <!-- Placeholder for half star, can be improved with specific character or SVG -->
+    {Array(emptyStars).fill('☆').map(star => <span class="star">{star}</span>)}
+  </div>
+  <div class="rating-info text-gray-700">
+    <span class="font-bold">{ratingValue.toFixed(1)}</span>
+    {ratingCount && <span class="text-sm ml-1">({ratingCount} ratings)</span>}
+  </div>
+</div>
+
+<div class="reviews-section mt-4">
+  <h3 class="text-lg font-semibold mb-2">Reviews</h3>
+  {reviews && reviews.length > 0 ? (
+    <div class="review-list">
+      <p class="text-gray-600 mb-2">Showing {reviews.length} review(s):</p>
+      {reviews.map(review => (
+        <div class="review-item bg-gray-100 p-3 rounded-md mb-2">
+          <p class="font-medium">{review.author} - <span class="text-yellow-500">{'★'.repeat(review.rating)}</span></p>
+          <p class="text-gray-700 text-sm">{review.text}</p>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p class="text-gray-600">No reviews yet. Be the first to review!</p>
+  )}
+</div>

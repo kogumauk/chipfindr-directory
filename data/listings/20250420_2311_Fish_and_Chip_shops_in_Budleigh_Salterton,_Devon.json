@@ -1,0 +1,378 @@
+{
+    "metadata": {
+        "request_parameters": {
+            "textQuery": "Fish and Chip shops in Budleigh Salterton, Devon",
+            "maxResultCount": 20
+        },
+        "field_mask_used": [
+            "nextPageToken",
+            "places.id",
+            "places.name",
+            "places.addressComponents",
+            "places.adrFormatAddress",
+            "places.formattedAddress",
+            "places.location",
+            "places.displayName",
+            "places.businessStatus",
+            "places.primaryType",
+            "places.primaryTypeDisplayName",
+            "places.currentOpeningHours",
+            "places.internationalPhoneNumber",
+            "places.nationalPhoneNumber",
+            "places.priceLevel",
+            "places.priceRange",
+            "places.rating",
+            "places.userRatingCount",
+            "places.websiteUri"
+        ],
+        "request_timestamp": "2025-04-20T23:11:29.452442",
+        "response_details": {
+            "timestamp": "2025-04-20T23:11:29.452442",
+            "status_code": 200,
+            "total_results": 1
+        }
+    },
+    "results": [
+        {
+            "name": "places/ChIJ_Zb8o4l1bUgR9aZwkPFdjKg",
+            "id": "ChIJ_Zb8o4l1bUgR9aZwkPFdjKg",
+            "nationalPhoneNumber": "01395 442962",
+            "internationalPhoneNumber": "+44 1395 442962",
+            "formattedAddress": "7 Chapel St, Budleigh Salterton EX9 6LX, UK",
+            "addressComponents": [
+                {
+                    "longText": "7",
+                    "shortText": "7",
+                    "types": [
+                        "street_number"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "Chapel Street",
+                    "shortText": "Chapel St",
+                    "types": [
+                        "route"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Budleigh Salterton",
+                    "shortText": "Budleigh Salterton",
+                    "types": [
+                        "postal_town"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Devon",
+                    "shortText": "Devon",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "England",
+                    "shortText": "England",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "United Kingdom",
+                    "shortText": "GB",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "EX9 6LX",
+                    "shortText": "EX9 6LX",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "location": {
+                "latitude": 50.629804500000006,
+                "longitude": -3.3251309
+            },
+            "rating": 4.2,
+            "websiteUri": "http://www.budleighfishandchips.co.uk/",
+            "adrFormatAddress": "<span class=\"street-address\">7 Chapel Street</span>, <span class=\"locality\">Budleigh Salterton</span> <span class=\"postal-code\">EX9 6LX</span>, <span class=\"country-name\">UK</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 481,
+            "displayName": {
+                "text": "Budleigh Fish & Chips",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Restaurant",
+                "languageCode": "en-US"
+            },
+            "currentOpeningHours": {
+                "openNow": false,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 21
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 23
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 24
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 25
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 12,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 14,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 17,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 20,
+                            "minute": 0,
+                            "date": {
+                                "year": 2025,
+                                "month": 4,
+                                "day": 26
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20098:00\u202fPM",
+                    "Tuesday: Closed",
+                    "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20098:00\u202fPM",
+                    "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20098:00\u202fPM",
+                    "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20098:00\u202fPM",
+                    "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20098:00\u202fPM",
+                    "Sunday: Closed"
+                ],
+                "specialDays": [
+                    {
+                        "date": {
+                            "year": 2025,
+                            "month": 4,
+                            "day": 21
+                        }
+                    }
+                ],
+                "nextOpenTime": "2025-04-21T11:00:00Z"
+            },
+            "primaryType": "restaurant",
+            "priceRange": {
+                "startPrice": {
+                    "currencyCode": "GBP",
+                    "units": "10"
+                },
+                "endPrice": {
+                    "currencyCode": "GBP",
+                    "units": "20"
+                }
+            }
+        }
+    ]
+}

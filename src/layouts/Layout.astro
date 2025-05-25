@@ -1,0 +1,48 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+	keywords?: string;
+	canonicalUrl?: string;
+	breadcrumbs?: { label: string; href?: string }[];
+}
+
+const { title, description, keywords, canonicalUrl, breadcrumbs } = Astro.props;
+const siteName = "ChipFindr"; // Updated site name
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} - {siteName}</title>
+		{description && <meta name="description" content={description} />}
+		{keywords && <meta name="keywords" content={keywords} />}
+		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+	</head>
+	<body>
+		<Navigation />
+		{breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
+		<slot />
+	</body>
+</html>
+
+<style>
+	html {
+		background-color: #F6F6F6;
+	}
+	body {
+		margin: 0;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+</style>

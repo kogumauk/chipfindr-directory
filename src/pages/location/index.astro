@@ -1,0 +1,281 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import { getSampleListings } from '../../utils/staticDataLoader';
+import { extractLocations, type LocationInfo } from '../../utils/locationUtils';
+
+// Get all locations from business data
+const allBusinesses = getSampleListings();
+const locations = extractLocations(allBusinesses);
+
+// Group locations by type
+const towns = locations.filter(loc => loc.type === 'town');
+const counties = locations.filter(loc => loc.type === 'county');
+const postcodes = locations.filter(loc => loc.type === 'postcode');
+
+// Calculate totals
+const totalBusinesses = allBusinesses.length;
+const totalLocations = locations.length;
+
+// Create breadcrumbs
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'All Locations' }
+];
+---
+
+<Layout
+  title="Fish & Chip Shop Locations Across the UK | ChipFindr"
+  description={`Find fish & chip shops in ${totalLocations} locations across the UK. Browse by town, county, or postcode area to discover the best local chippies.`}
+  keywords="fish and chips locations, UK chippy directory, fish shop finder, local fish and chips"
+  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <!-- Header Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Fish & Chip Shop Locations
+          </h1>
+          <p class="text-lg md:text-xl text-blue-100 mb-6">
+            Discover fish & chip shops across the UK by location
+          </p>
+          
+          <!-- Stats -->
+          <div class="flex flex-wrap justify-center gap-6 text-sm">
+            <div class="bg-white bg-opacity-20 rounded-full px-4 py-2">
+              <span class="font-semibold">{totalBusinesses}</span> Fish & Chip Shops
+            </div>
+            <div class="bg-white bg-opacity-20 rounded-full px-4 py-2">
+              <span class="font-semibold">{totalLocations}</span> Locations
+            </div>
+            <div class="bg-white bg-opacity-20 rounded-full px-4 py-2">
+              <span class="font-semibold">{counties.length}</span> Counties
+            </div>
+          </div>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto">
+          <SearchBar 
+            placeholder="Search by location name or postcode..."
+            showLocationFilter={true}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="bg-white border-b py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#towns" class="text-blue-600 hover:text-blue-800 font-medium">
+            Towns & Cities ({towns.length})
+          </a>
+          <span class="text-gray-300">•</span>
+          <a href="#counties" class="text-blue-600 hover:text-blue-800 font-medium">
+            Counties ({counties.length})
+          </a>
+          {postcodes.length > 0 && (
+            <>
+              <span class="text-gray-300">•</span>
+              <a href="#postcodes" class="text-blue-600 hover:text-blue-800 font-medium">
+                Postcode Areas ({postcodes.length})
+              </a>
+            </>
+          )}
+        </div>
+      </div>
+    </section>
+
+    <!-- Towns & Cities Section -->
+    <section id="towns" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">
+            Towns & Cities
+          </h2>
+          <p class="text-gray-600">
+            Browse fish & chip shops by specific towns and cities
+          </p>
+        </div>
+
+        {towns.length > 0 ? (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {towns.map((town) => (
+              <a 
+                href={`/location/${town.slug}`}
+                class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 group"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      {town.name}
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                      {town.count} {town.count === 1 ? 'fish & chip shop' : 'fish & chip shops'}
+                    </p>
+                    
+                    <!-- Show sample business names -->
+                    {town.businesses.length > 0 && (
+                      <p class="text-xs text-gray-500 mt-2 line-clamp-1">
+                        Including: {town.businesses.slice(0, 2).map(b => b.name.text).join(', ')}
+                        {town.businesses.length > 2 && ` and ${town.businesses.length - 2} more`}
+                      </p>
+                    )}
+                  </div>
+                  <div class="text-blue-600 text-2xl group-hover:text-blue-800 transition-colors">
+                    →
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div class="text-center py-8">
+            <div class="text-4xl mb-4">🏘️</div>
+            <p class="text-gray-600">No town data available yet.</p>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Counties Section -->
+    <section id="counties" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">
+            Counties
+          </h2>
+          <p class="text-gray-600">
+            Explore fish & chip shops across entire counties
+          </p>
+        </div>
+
+        {counties.length > 0 ? (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {counties.map((county) => (
+              <a 
+                href={`/location/${county.slug}`}
+                class="block bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg hover:from-blue-100 hover:to-blue-200 transition-colors p-6 group"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      {county.name}
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                      {county.count} {county.count === 1 ? 'fish & chip shop' : 'fish & chip shops'}
+                    </p>
+                    
+                    <!-- Show unique towns in this county -->
+                    {(() => {
+                      const uniqueTowns = [...new Set(county.businesses.map(b => b.town).filter(Boolean))];
+                      return uniqueTowns.length > 0 && (
+                        <p class="text-xs text-gray-500 mt-2">
+                          {uniqueTowns.length === 1 
+                            ? `In ${uniqueTowns[0]}`
+                            : `Across ${uniqueTowns.length} towns including ${uniqueTowns.slice(0, 2).join(', ')}`
+                          }
+                        </p>
+                      );
+                    })()}
+                  </div>
+                  <div class="text-blue-600 text-2xl group-hover:text-blue-800 transition-colors">
+                    →
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div class="text-center py-8">
+            <div class="text-4xl mb-4">🗺️</div>
+            <p class="text-gray-600">No county data available yet.</p>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Postcode Areas Section -->
+    {postcodes.length > 0 && (
+      <section id="postcodes" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              Postcode Areas
+            </h2>
+            <p class="text-gray-600">
+              Find fish & chip shops by postcode area
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {postcodes.map((postcode) => (
+              <a 
+                href={`/location/${postcode.slug}`}
+                class="block bg-white rounded-lg shadow hover:shadow-md transition-shadow p-4 group text-center"
+              >
+                <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {postcode.name}
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  {postcode.count} {postcode.count === 1 ? 'shop' : 'shops'}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Help Section -->
+    <section class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">
+            Can't Find Your Location?
+          </h2>
+          <p class="text-lg text-blue-200 mb-6">
+            We're constantly adding new locations and businesses to ChipFindr. 
+            If you don't see your area listed, it might be because we haven't discovered any fish & chip shops there yet.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/claim-business" 
+              class="inline-block bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors"
+            >
+              Suggest a Business
+            </a>
+            <a 
+              href="/search" 
+              class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors border border-blue-600"
+            >
+              Search All Listings
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+  }
+  
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

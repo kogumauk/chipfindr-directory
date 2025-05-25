@@ -1,0 +1,105 @@
+---
+// Navigation component for ChipFindr
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="bg-white shadow-sm border-b">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="flex items-center gap-2 font-bold text-xl text-blue-600">
+          <span class="text-2xl">🐟</span>
+          ChipFindr
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a 
+          href="/" 
+          class={`text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath === '/' ? 'text-blue-600' : ''}`}
+        >
+          Home
+        </a>
+        <a 
+          href="/search" 
+          class={`text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath === '/search' ? 'text-blue-600' : ''}`}
+        >
+          Search
+        </a>
+        <a 
+          href="/location" 
+          class={`text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath.startsWith('/location') ? 'text-blue-600' : ''}`}
+        >
+          Browse Locations
+        </a>
+        <a 
+          href="/claim-business" 
+          class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium transition-colors"
+        >
+          Add Business
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileMenu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
+        <a 
+          href="/" 
+          class={`block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath === '/' ? 'text-blue-600 bg-blue-50' : ''}`}
+        >
+          Home
+        </a>
+        <a 
+          href="/search" 
+          class={`block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath === '/search' ? 'text-blue-600 bg-blue-50' : ''}`}
+        >
+          Search
+        </a>
+        <a 
+          href="/location" 
+          class={`block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors ${currentPath.startsWith('/location') ? 'text-blue-600 bg-blue-50' : ''}`}
+        >
+          Browse Locations
+        </a>
+        <a 
+          href="/claim-business" 
+          class="block px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors text-center"
+        >
+          Add Business
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .container {
+    max-width: 1200px;
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

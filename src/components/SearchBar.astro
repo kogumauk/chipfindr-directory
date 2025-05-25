@@ -1,0 +1,167 @@
+---
+interface Props {
+  placeholder?: string;
+  showLocationFilter?: boolean;
+}
+
+const { 
+  placeholder = "Search for fish & chip shops...", 
+  showLocationFilter = true 
+} = Astro.props;
+---
+
+<div class="search-bar-container">
+  <div class="flex flex-col sm:flex-row gap-3 w-full max-w-4xl mx-auto" id="searchContainer">
+    <!-- Main Search Input -->
+    <div class="relative flex-1">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+      <input
+        type="text"
+        name="q"
+        placeholder={placeholder}
+        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-500"
+        autocomplete="off"
+        id="searchInput"
+      />
+    </div>
+
+    <!-- Location Filter -->
+    {showLocationFilter && (
+      <div class="relative sm:w-48">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </div>
+        <select 
+          name="location"
+          class="w-full pl-10 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 appearance-none bg-white"
+          id="locationSelect"
+        >
+          <option value="">All Locations</option>
+          <option value="devon">Devon</option>
+          <option value="brixham">Brixham</option>
+          <option value="budleigh-salterton">Budleigh Salterton</option>
+        </select>
+        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </div>
+      </div>
+    )}
+
+    <!-- Search Button -->
+    <button
+      type="button"
+      id="searchButton"
+      class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+    >
+      Search
+    </button>
+  </div>
+
+  <!-- Quick Search Links -->
+  <div class="mt-4 flex flex-wrap gap-2 justify-center">
+    <span class="text-sm text-gray-600">Popular searches:</span>
+    <button data-search="fish and chips" data-location="" class="quick-search-btn text-sm text-blue-600 hover:text-blue-800 underline">Fish & Chips</button>
+    <span class="text-gray-300">•</span>
+    <button data-search="" data-location="devon" class="quick-search-btn text-sm text-blue-600 hover:text-blue-800 underline">Devon</button>
+    <span class="text-gray-300">•</span>
+    <button data-search="takeaway" data-location="" class="quick-search-btn text-sm text-blue-600 hover:text-blue-800 underline">Takeaway</button>
+    <span class="text-gray-300">•</span>
+    <button data-search="restaurant" data-location="" class="quick-search-btn text-sm text-blue-600 hover:text-blue-800 underline">Restaurant</button>
+  </div>
+</div>
+
+<style>
+  .search-bar-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const locationSelect = document.getElementById('locationSelect');
+    const searchButton = document.getElementById('searchButton');
+    
+    // Handle search execution
+    function executeSearch() {
+      const searchTerm = searchInput ? searchInput.value.trim() : '';
+      const location = locationSelect ? locationSelect.value.trim() : '';
+      
+      // If we're on the search page and have the global search function
+      if (typeof window.chipFindrSearch?.performSearch === 'function') {
+        window.chipFindrSearch.performSearch(searchTerm, location);
+      } else {
+        // Navigate to search page with parameters
+        const params = new URLSearchParams();
+        if (searchTerm) params.append('q', searchTerm);
+        if (location) params.append('location', location);
+        
+        const searchUrl = `/search${params.toString() ? '?' + params.toString() : ''}`;
+        window.location.href = searchUrl;
+      }
+    }
+    
+    // Search button click
+    if (searchButton) {
+      searchButton.addEventListener('click', executeSearch);
+    }
+    
+    // Enter key in search input
+    if (searchInput) {
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          executeSearch();
+        }
+      });
+      
+      // Real-time search if on search page
+      searchInput.addEventListener('input', function() {
+        if (typeof window.chipFindrSearch?.performSearch === 'function') {
+          const searchTerm = this.value.trim();
+          const location = locationSelect ? locationSelect.value.trim() : '';
+          window.chipFindrSearch.performSearch(searchTerm, location);
+        }
+      });
+    }
+    
+    // Location change
+    if (locationSelect) {
+      locationSelect.addEventListener('change', function() {
+        if (typeof window.chipFindrSearch?.performSearch === 'function') {
+          const searchTerm = searchInput ? searchInput.value.trim() : '';
+          const location = this.value.trim();
+          window.chipFindrSearch.performSearch(searchTerm, location);
+        } else {
+          executeSearch();
+        }
+      });
+    }
+    
+    // Quick search buttons
+    document.querySelectorAll('.quick-search-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const searchTerm = this.dataset.search;
+        const location = this.dataset.location;
+        
+        if (searchInput) searchInput.value = searchTerm;
+        if (locationSelect) locationSelect.value = location;
+        
+        executeSearch();
+      });
+    });
+  });
+</script>

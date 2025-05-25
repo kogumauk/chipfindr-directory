@@ -1,0 +1,90 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import type { BusinessListing, AddressComponent } from '../../../types/BusinessListing';
+import PaginationControls from '../../../components/PaginationControls.astro';
+import type { GetStaticPathsOptions } from 'astro'; // New import
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allListings = await getCollection('listings');
+
+  const categoryLocationMap = new Map<string, CollectionEntry<'listings'>[]>();
+
+  allListings.forEach(listing => {
+    const category = listing.data.category;
+    const addressComponents = listing.data.addressComponents;
+    let location: string | undefined;
+    for (const component of addressComponents) {
+      if (component.types.includes('postal_town') || component.types.includes('locality')) {
+        location = component.longText;
+        break;
+      }
+    }
+
+    if (category && location) {
+      const key = `${category}-${location}`;
+      if (!categoryLocationMap.has(key)) {
+        categoryLocationMap.set(key, []);
+      }
+      categoryLocationMap.get(key)?.push(listing);
+    }
+  });
+
+  let paginatedRoutes = [];
+  for (const [key, listings] of Array.from(categoryLocationMap.entries())) {
+    const [category, location] = key.split('-');
+    paginatedRoutes.push(
+      ...paginate(listings, {
+        params: { category: category as string, location: location as string },
+        props: { category: category as string, location: location as string },
+        pageSize: 10,
+      })
+    );
+  }
+  return paginatedRoutes;
+}
+
+interface Props {
+  page: {
+    data: CollectionEntry<'listings'>[];
+    currentPage: number;
+    totalPages: number;
+    url: {
+      prev: string | undefined;
+      next: string | undefined;
+    };
+  };
+  category: string;
+  location: string;
+}
+
+const { page, category, location } = Astro.props;
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: category, href: `/${category}` },
+  { label: location },
+];
+---
+
+<Layout
+  title={`${category} in ${location} - Page ${page.currentPage}`}
+  description={`Find the best ${category} listings in ${location}. View businesses, reviews, and more on UK Biz Directory. Page ${page.currentPage}.`}
+  keywords={`${category}, ${location}, businesses, directory, listings, reviews`}
+  canonicalUrl={page.currentPage === 1 ? Astro.url.origin + Astro.url.pathname.replace(/\/\d+$/, '') : Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <h1>Businesses in {category} in {location}</h1>
+    {page.data.length > 0 ? (
+      <ul>
+        {page.data.map((listing) => (
+          <li>{listing.data.name.text}</li>
+        ))}
+      </ul>
+    ) : (
+      <p>No businesses found for {category} in {location}.</p>
+    )}
+    <PaginationControls page={page} />
+  </main>
+</Layout>

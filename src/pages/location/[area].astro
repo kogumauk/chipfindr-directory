@@ -1,0 +1,292 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import BusinessCard from '../../components/BusinessCard.astro';
+import { getSampleListings } from '../../utils/staticDataLoader';
+import { 
+  extractLocations, 
+  findLocationBySlug, 
+  generateLocationMetadata,
+  getRelatedLocations,
+  type LocationInfo 
+} from '../../utils/locationUtils';
+
+// Generate static paths for all location pages
+export async function getStaticPaths() {
+  const allBusinesses = getSampleListings();
+  const locations = extractLocations(allBusinesses);
+  
+  return locations.map((location) => ({
+    params: { area: location.slug },
+    props: { location, allLocations: locations, allBusinesses }
+  }));
+}
+
+// Get props from getStaticPaths
+const { location, allLocations, allBusinesses } = Astro.props as {
+  location: LocationInfo;
+  allLocations: LocationInfo[];
+  allBusinesses: any[];
+};
+
+// Generate page metadata
+const metadata = generateLocationMetadata(location);
+const relatedLocations = getRelatedLocations(location, allLocations, allBusinesses);
+
+// Sort businesses by rating (highest first)
+const sortedBusinesses = [...location.businesses].sort((a, b) => {
+  if (b.rating && a.rating) {
+    if (b.rating !== a.rating) return b.rating - a.rating;
+    return (b.reviewCount || 0) - (a.reviewCount || 0);
+  }
+  if (b.rating && !a.rating) return 1;
+  if (!b.rating && a.rating) return -1;
+  return 0;
+});
+
+// Create breadcrumbs
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Locations', href: '/search?location=' },
+  { label: location.name }
+];
+
+// Get location stats
+const avgRating = location.businesses
+  .filter(b => b.rating)
+  .reduce((sum, b) => sum + (b.rating || 0), 0) / location.businesses.filter(b => b.rating).length;
+
+const totalReviews = location.businesses
+  .reduce((sum, b) => sum + (b.reviewCount || 0), 0);
+---
+
+<Layout
+  title={metadata.title}
+  description={metadata.description}
+  keywords={metadata.keywords}
+  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <!-- Location Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            {metadata.heading}
+          </h1>
+          <p class="text-lg md:text-xl text-blue-100 mb-6">
+            {metadata.subheading}
+          </p>
+          
+          <!-- Location Stats -->
+          <div class="flex flex-wrap justify-center gap-6 text-sm">
+            <div class="bg-white bg-opacity-90 text-gray-800 rounded-full px-4 py-2">
+              <span class="font-semibold">{location.count}</span> {location.count === 1 ? 'Business' : 'Businesses'}
+            </div>
+            {avgRating && !isNaN(avgRating) && (
+              <div class="bg-white bg-opacity-90 text-gray-800 rounded-full px-4 py-2">
+                <span class="font-semibold">{avgRating.toFixed(1)}★</span> Average Rating
+              </div>
+            )}
+            {totalReviews > 0 && (
+              <div class="bg-white bg-opacity-90 text-gray-800 rounded-full px-4 py-2">
+                <span class="font-semibold">{totalReviews.toLocaleString()}</span> Total Reviews
+              </div>
+            )}
+          </div>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto">
+          <SearchBar 
+            placeholder={`Search fish & chip shops in ${location.name}...`}
+            showLocationFilter={false}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Information Panel -->
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-blue-50 rounded-lg p-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-3">
+              About Fish & Chips in {location.name}
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+              {location.type === 'town' && (
+                `${location.name} is home to ${location.count} excellent fish & chip shops, offering everything from traditional takeaways to award-winning seafood restaurants. Whether you're looking for a quick bite or a sit-down meal, you'll find quality fish & chips prepared with fresh, local ingredients.`
+              )}
+              {location.type === 'county' && (
+                `${location.name} county boasts ${location.count} fantastic fish & chip establishments across its towns and villages. From coastal locations serving the freshest catch to inland shops perfecting traditional recipes, ${location.name} offers diverse and delicious fish & chips experiences.`
+              )}
+              {location.type === 'postcode' && (
+                `The ${location.name} postcode area features ${location.count} quality fish & chip shops, serving both locals and visitors with traditional British fare. Each establishment brings its own character and specialties to this beloved cuisine.`
+              )}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Listings -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">
+            All Fish & Chip Shops in {location.name}
+          </h2>
+          <p class="text-gray-600">
+            Listed by rating and customer reviews
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {sortedBusinesses.map((business) => (
+            <BusinessCard business={business} />
+          ))}
+        </div>
+
+        {location.count === 0 && (
+          <div class="text-center py-12">
+            <div class="text-6xl mb-4">🐟</div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">No Listings Found</h3>
+            <p class="text-gray-600 mb-6">
+              We don't have any fish & chip shops listed for {location.name} yet.
+            </p>
+            <a 
+              href="/search" 
+              class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Browse All Locations
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Related Locations -->
+    {relatedLocations.length > 0 && (
+      <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              {location.type === 'county' ? 'Towns & Areas' : 'Related Locations'}
+            </h2>
+            <p class="text-gray-600">
+              {location.type === 'county' 
+                ? `Explore fish & chip shops in specific towns within ${location.name}`
+                : 'Discover more great fish & chip shops nearby'
+              }
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relatedLocations.map((relatedLocation) => (
+              <a 
+                href={`/location/${relatedLocation.slug}`}
+                class="block bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 hover:from-blue-100 hover:to-blue-200 transition-colors group"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      {relatedLocation.name}
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                      {relatedLocation.count} {relatedLocation.count === 1 ? 'shop' : 'shops'}
+                      {relatedLocation.type === 'county' && ' • County'}
+                      {relatedLocation.type === 'postcode' && ' • Postcode Area'}
+                    </p>
+                  </div>
+                  <div class="text-blue-600 text-2xl">
+                    →
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- SEO Content -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto prose prose-lg">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">
+            Finding Great Fish & Chips in {location.name}
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What to Look For</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Fresh fish delivered daily</li>
+                <li>• Crispy, golden batter</li>
+                <li>• Proper chip shop chips (thick cut)</li>
+                <li>• Good customer reviews</li>
+                <li>• Clean, well-maintained premises</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Popular Choices</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Traditional cod & chips</li>
+                <li>• Haddock for a milder taste</li>
+                <li>• Plaice for something different</li>
+                <li>• Mushy peas as a classic side</li>
+                <li>• Curry sauce for extra flavor</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-yellow-50 rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              🎯 Insider Tip
+            </h3>
+            <p class="text-gray-700 text-sm">
+              The best fish & chip shops often have a queue, especially on Friday evenings. 
+              This is usually a good sign! Don't be put off - it means fresh food and loyal customers.
+              {location.type === 'town' && ` In ${location.name}, look for shops with awards or long-standing local reputations.`}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Missing Your Favorite Chippy?
+        </h2>
+        <p class="text-lg text-blue-200 mb-6 max-w-2xl mx-auto">
+          Help us make ChipFindr even better by suggesting fish & chip shops we might have missed in {location.name}.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/claim-business" 
+            class="inline-block bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors"
+          >
+            Add a Business
+          </a>
+          <a 
+            href="/search" 
+            class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors border border-blue-600"
+          >
+            Browse All Locations
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+  }
+</style>

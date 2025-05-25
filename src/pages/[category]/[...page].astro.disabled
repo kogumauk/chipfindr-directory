@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import type { BusinessListing } from '../../types/BusinessListing';
+import PaginationControls from '../../components/PaginationControls.astro';
+import BusinessCard from '../../components/BusinessCard.astro';
+import type { GetStaticPathsOptions } from 'astro'; // New import
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allListings = await getCollection('listings');
+
+  const categories = new Set();
+  allListings.forEach(listing => {
+    if (listing.data.category) {
+      categories.add(listing.data.category);
+    }
+  });
+
+  let paginatedRoutes = [];
+  for (const category of Array.from(categories)) {
+    const listingsInCategory = allListings.filter(
+      (listing) => listing.data.category === category
+    );
+    paginatedRoutes.push(
+      ...paginate(listingsInCategory, {
+        params: { category: category as string },
+        props: { categoryName: category as string },
+        pageSize: 10,
+      })
+    );
+  }
+  return paginatedRoutes;
+}
+
+interface Props {
+  page: {
+    data: CollectionEntry<'listings'>[];
+    currentPage: number;
+    totalPages: number;
+    url: {
+      prev: string | undefined;
+      next: string | undefined;
+    };
+  };
+  categoryName: string;
+}
+
+const { page, categoryName } = Astro.props;
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: categoryName },
+];
+---
+
+<Layout
+  title={`${categoryName} - Page ${page.currentPage}`}
+  description={`Find the best ${categoryName} listings. View businesses, reviews, and more on UK Biz Directory. Page ${page.currentPage}.`}
+  keywords={`${categoryName}, businesses, directory, listings, reviews`}
+  canonicalUrl={page.currentPage === 1 ? Astro.url.origin + Astro.url.pathname.replace(/\/\d+$/, '') : Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <h1>{categoryName}</h1>
+    <h2>Businesses:</h2>
+    <ul>
+      {page.data.map((listing) => (
+        <li>
+          <BusinessCard business={listing.data as BusinessListing} />
+        </li>
+      ))}
+    </ul>
+    <PaginationControls page={page} />
+  </main>
+</Layout>

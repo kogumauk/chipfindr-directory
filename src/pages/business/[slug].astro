@@ -1,0 +1,335 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getSampleListings } from '../../utils/staticDataLoader';
+import { generateBusinessSlug, formatRating, getStarRating, formatPriceLevel, getTodaysHours, isCurrentlyOpen } from '../../utils/formatters';
+
+// Generate static paths for all businesses
+export async function getStaticPaths() {
+  const allListings = getSampleListings();
+  
+  return allListings.map((business) => ({
+    params: { slug: generateBusinessSlug(business) },
+    props: { business }
+  }));
+}
+
+// Get the business from props (passed from getStaticPaths)
+const { business } = Astro.props;
+
+// Get business details
+const isOpen = isCurrentlyOpen(business);
+const todaysHours = getTodaysHours(business);
+const priceLevel = formatPriceLevel(business.priceLevel);
+
+// Create breadcrumbs
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Search', href: '/search' },
+  { label: business.name.text }
+];
+
+// Generate page title and description
+const pageTitle = `${business.name.text} - Fish & Chip Shop in ${business.town}`;
+const pageDescription = `${business.name.text} in ${business.formattedAddress}. ${business.rating ? `Rated ${formatRating(business.rating)} stars` : ''} ${business.reviewCount ? `with ${business.reviewCount} reviews` : ''}. Find opening hours, contact details and more.`;
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={`${business.name.text}, fish and chips, ${business.town}, ${business.county}, chippy, takeaway, restaurant`}
+  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <!-- Business Header Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+          <!-- Business Image Placeholder -->
+          <div class="w-full lg:w-80 h-60 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg flex items-center justify-center relative overflow-hidden">
+            <div class="text-blue-600 text-8xl">🐟</div>
+            {isOpen && (
+              <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Open Now
+              </div>
+            )}
+          </div>
+
+          <!-- Business Info -->
+          <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{business.name.text}</h1>
+            
+            <!-- Rating and Reviews -->
+            {business.rating && (
+              <div class="flex items-center gap-4 mb-4">
+                <div class="flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-4 py-2">
+                  <span class="text-yellow-300 text-lg">{getStarRating(business.rating)}</span>
+                  <span class="font-semibold">{formatRating(business.rating)}</span>
+                </div>
+                {business.reviewCount && (
+                  <span class="text-blue-200">({business.reviewCount} reviews)</span>
+                )}
+              </div>
+            )}
+
+            <!-- Business Type and Price -->
+            <div class="flex flex-wrap gap-4 mb-6">
+              {business.primaryTypeDisplayName?.text && (
+                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
+                  {business.primaryTypeDisplayName.text}
+                </span>
+              )}
+              {priceLevel && (
+                <span class="bg-green-500 bg-opacity-80 px-3 py-1 rounded-full text-sm font-medium">
+                  {priceLevel}
+                </span>
+              )}
+              {business.verified && (
+                <span class="bg-blue-500 bg-opacity-80 px-3 py-1 rounded-full text-sm font-medium">
+                  ✓ Verified
+                </span>
+              )}
+            </div>
+
+            <!-- Contact Actions -->
+            <div class="flex flex-wrap gap-3">
+              {business.nationalPhoneNumber && (
+                <a 
+                  href={`tel:${business.nationalPhoneNumber}`}
+                  class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
+                >
+                  📞 Call Now
+                </a>
+              )}
+              {business.websiteUri && (
+                <a 
+                  href={business.websiteUri}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
+                >
+                  🌐 Visit Website
+                </a>
+              )}
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
+                📍 Get Directions
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Main Information -->
+          <div class="lg:col-span-2 space-y-8">
+            <!-- About Section -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">About {business.name.text}</h2>
+              <p class="text-gray-600 mb-4">
+                {business.name.text} is a {business.primaryTypeDisplayName?.text.toLowerCase() || 'fish & chip shop'} 
+                located in {business.town}, {business.county}. 
+                {business.rating && business.reviewCount && 
+                  `With a ${formatRating(business.rating)}-star rating from ${business.reviewCount} customer reviews, `
+                }
+                this establishment is known for quality fish & chips and excellent service.
+              </p>
+              
+              {business.priceRange && (
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h3 class="font-semibold text-gray-900 mb-2">Price Range</h3>
+                  <p class="text-gray-600">
+                    £{business.priceRange.startPrice?.units} - £{business.priceRange.endPrice?.units}
+                    <span class="text-sm text-gray-500 ml-2">per person</span>
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <!-- Opening Hours Section -->
+            {business.currentOpeningHours?.weekdayDescriptions && (
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Opening Hours</h2>
+                <div class="space-y-2">
+                  {business.currentOpeningHours.weekdayDescriptions.map((hours) => {
+                    const [day, time] = hours.split(': ');
+                    const isToday = day === ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
+                    
+                    return (
+                      <div class={`flex justify-between items-center py-2 px-3 rounded ${isToday ? 'bg-blue-50 border-l-4 border-blue-500' : ''}`}>
+                        <span class={`font-medium ${isToday ? 'text-blue-700' : 'text-gray-700'}`}>{day}</span>
+                        <span class={`${isToday ? 'text-blue-600 font-medium' : 'text-gray-600'}`}>
+                          {time === 'Closed' ? (
+                            <span class="text-red-600">Closed</span>
+                          ) : (
+                            time
+                          )}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+                
+                {todaysHours && (
+                  <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <span class={`w-3 h-3 rounded-full ${isOpen ? 'bg-green-500' : 'bg-red-500'}`}></span>
+                      <span class="font-medium text-gray-900">
+                        {isOpen ? 'Open Now' : 'Closed'}
+                      </span>
+                      <span class="text-gray-600">• Today: {todaysHours}</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <!-- Reviews Section Placeholder -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Customer Reviews</h2>
+              <div class="text-center py-8">
+                <div class="text-4xl mb-4">⭐</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Reviews Coming Soon</h3>
+                <p class="text-gray-600">We're working on integrating customer reviews for this business.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="space-y-6">
+            <!-- Contact Information -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Contact Information</h3>
+              
+              <div class="space-y-4">
+                <!-- Address -->
+                <div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-600 text-lg">📍</span>
+                    <div>
+                      <p class="text-gray-900 font-medium">Address</p>
+                      <p class="text-gray-600 text-sm">{business.formattedAddress}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                {business.nationalPhoneNumber && (
+                  <div>
+                    <div class="flex items-start gap-3">
+                      <span class="text-blue-600 text-lg">📞</span>
+                      <div>
+                        <p class="text-gray-900 font-medium">Phone</p>
+                        <a 
+                          href={`tel:${business.nationalPhoneNumber}`}
+                          class="text-blue-600 hover:text-blue-800 text-sm"
+                        >
+                          {business.nationalPhoneNumber}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <!-- Website -->
+                {business.websiteUri && (
+                  <div>
+                    <div class="flex items-start gap-3">
+                      <span class="text-blue-600 text-lg">🌐</span>
+                      <div>
+                        <p class="text-gray-900 font-medium">Website</p>
+                        <a 
+                          href={business.websiteUri}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-blue-600 hover:text-blue-800 text-sm break-all"
+                        >
+                          Visit Website
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Quick Actions</h3>
+              <div class="space-y-3">
+                <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-sm">
+                  ⭐ Write a Review
+                </button>
+                <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200 transition-colors text-sm">
+                  📷 Add Photos
+                </button>
+                <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200 transition-colors text-sm">
+                  🚨 Report Issue
+                </button>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Location</h3>
+              <div class="h-48 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div class="text-center">
+                  <div class="text-4xl mb-2">🗺️</div>
+                  <p class="text-gray-600 text-sm">Interactive map coming soon</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <button class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-sm">
+                  📍 Get Directions
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Businesses -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Other Fish & Chip Shops in {business.town}
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {getSampleListings()
+            .filter(listing => listing.id !== business.id && listing.town === business.town)
+            .slice(0, 3)
+            .map((relatedBusiness) => (
+              <div class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="font-semibold text-gray-900 mb-2">{relatedBusiness.name.text}</h3>
+                <p class="text-gray-600 text-sm mb-3">{relatedBusiness.formattedAddress}</p>
+                {relatedBusiness.rating && (
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="text-yellow-500 text-sm">{getStarRating(relatedBusiness.rating)}</span>
+                    <span class="text-sm">{formatRating(relatedBusiness.rating)}</span>
+                  </div>
+                )}
+                <a 
+                  href={`/business/${generateBusinessSlug(relatedBusiness)}`}
+                  class="inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+  }
+</style>

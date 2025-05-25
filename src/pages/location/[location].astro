@@ -1,0 +1,356 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import BusinessCard from '../../components/BusinessCard.astro';
+import { getSampleListings } from '../../utils/staticDataLoader';
+import { getLocationStats } from '../../utils/dataLoader';
+
+// Generate static paths for all locations
+export async function getStaticPaths() {
+  const allListings = getSampleListings();
+  const stats = getLocationStats(allListings);
+  
+  return stats.locations.map((location) => ({
+    params: { location: location.name.toLowerCase().replace(/\s+/g, '-') },
+    props: { 
+      locationName: location.name,
+      businessCount: location.count
+    }
+  }));
+}
+
+// Get the location info from props
+const { locationName, businessCount } = Astro.props;
+
+// Load all listings and filter by location
+const allListings = getSampleListings();
+const locationListings = allListings.filter(listing => 
+  listing.town?.toLowerCase() === locationName.toLowerCase()
+);
+
+// Sort by rating (highest first)
+const sortedListings = locationListings.sort((a, b) => {
+  if (b.rating !== a.rating) {
+    return (b.rating || 0) - (a.rating || 0);
+  }
+  return (b.reviewCount || 0) - (a.reviewCount || 0);
+});
+
+// Get some statistics for this location
+const avgRating = locationListings.length > 0 
+  ? locationListings
+      .filter(l => l.rating)
+      .reduce((sum, l) => sum + (l.rating || 0), 0) / locationListings.filter(l => l.rating).length
+  : 0;
+
+const totalReviews = locationListings.reduce((sum, l) => sum + (l.reviewCount || 0), 0);
+
+// Get the county for this location (from first business)
+const county = locationListings[0]?.county || '';
+
+// Create breadcrumbs
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Locations', href: '/locations' },
+  { label: locationName }
+];
+
+// Generate page title and description
+const pageTitle = `Fish & Chip Shops in ${locationName}${county ? `, ${county}` : ''}`;
+const pageDescription = `Discover ${businessCount} fish & chip shop${businessCount !== 1 ? 's' : ''} in ${locationName}${county ? `, ${county}` : ''}. Find opening times, reviews, contact details and directions for the best local chippies.`;
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={`fish and chips, ${locationName}, ${county}, chippy, takeaway, restaurant, local food`}
+  canonicalUrl={Astro.url.origin + Astro.url.pathname}
+  breadcrumbs={breadcrumbs}
+>
+  <main>
+    <!-- Location Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Fish & Chip Shops in <span class="text-yellow-300">{locationName}</span>
+          </h1>
+          <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+            Discover the best fish & chip shops in {locationName}{county ? `, ${county}` : ''}. 
+            From traditional takeaways to award-winning restaurants, find your perfect local chippy.
+          </p>
+        </div>
+        
+        <!-- Location Search Bar -->
+        <div class="max-w-4xl mx-auto">
+          <SearchBar 
+            placeholder={`Search fish & chip shops in ${locationName}...`}
+            showLocationFilter={true}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Stats -->
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="text-3xl font-bold text-blue-600 mb-2">{businessCount}</div>
+            <div class="text-gray-600">Fish & Chip Shops</div>
+          </div>
+          {avgRating > 0 && (
+            <div class="bg-yellow-50 rounded-lg p-6">
+              <div class="text-3xl font-bold text-yellow-600 mb-2">{avgRating.toFixed(1)}</div>
+              <div class="text-gray-600">Average Rating</div>
+            </div>
+          )}
+          {totalReviews > 0 && (
+            <div class="bg-green-50 rounded-lg p-6">
+              <div class="text-3xl font-bold text-green-600 mb-2">{totalReviews.toLocaleString()}</div>
+              <div class="text-gray-600">Total Reviews</div>
+            </div>
+          )}
+          <div class="bg-purple-50 rounded-lg p-6">
+            <div class="text-3xl font-bold text-purple-600 mb-2">📍</div>
+            <div class="text-gray-600">{locationName}{county ? `, ${county}` : ''}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Listings -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              All Fish & Chip Shops in {locationName}
+            </h2>
+            <p class="text-gray-600">
+              {businessCount} establishment{businessCount !== 1 ? 's' : ''} found
+              {avgRating > 0 && ` • Average rating: ${avgRating.toFixed(1)} stars`}
+            </p>
+          </div>
+          
+          <!-- Sort Options -->
+          <div class="flex gap-2">
+            <select 
+              id="sortSelect" 
+              class="px-3 py-2 border border-gray-300 rounded-lg text-sm"
+              onchange="sortBusinesses(this.value)"
+            >
+              <option value="rating-high">Sort by: Rating (High to Low)</option>
+              <option value="rating-low">Rating (Low to High)</option>
+              <option value="name-az">Name (A-Z)</option>
+              <option value="name-za">Name (Z-A)</option>
+              <option value="reviews-most">Reviews (Most)</option>
+              <option value="reviews-least">Reviews (Least)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Business Grid -->
+        {sortedListings.length > 0 ? (
+          <div id="businessGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {sortedListings.map((listing, index) => (
+              <div class="business-card" 
+                   data-rating={listing.rating || 0}
+                   data-reviews={listing.reviewCount || 0}
+                   data-name={listing.name.text}
+                   data-index={index}
+              >
+                <BusinessCard business={listing} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <!-- No Results -->
+          <div class="bg-white rounded-lg p-8 text-center">
+            <div class="text-6xl mb-4">🐟</div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              No fish & chip shops found in {locationName}
+            </h3>
+            <p class="text-gray-600 mb-6">
+              We haven't found any listings for this location yet. 
+              Check back soon as we're constantly adding new businesses.
+            </p>
+            <a 
+              href="/"
+              class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Browse All Locations
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Location Information -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+            About Fish & Chips in {locationName}
+          </h2>
+          
+          <div class="bg-white rounded-lg shadow-md p-8">
+            <div class="prose max-w-none">
+              <p class="text-gray-600 mb-4">
+                {locationName}{county ? ` in ${county}` : ''} is home to {businessCount} fantastic fish & chip shop{businessCount !== 1 ? 's' : ''}, 
+                offering everything from traditional takeaways to modern seafood restaurants. 
+                {avgRating > 0 && `With an average rating of ${avgRating.toFixed(1)} stars, `}
+                the local chippies here are known for their quality ingredients, generous portions, and authentic British fish & chips experience.
+              </p>
+              
+              {locationName === 'Brixham' && (
+                <p class="text-gray-600 mb-4">
+                  As a historic fishing port in Devon, Brixham is renowned for its fresh seafood and traditional fishing heritage. 
+                  The town's fish & chip shops benefit from access to some of the freshest fish in the UK, 
+                  caught daily by the local fishing fleet. From the bustling harbour area to the charming town center, 
+                  you'll find authentic chippies serving up classic British fare with that special coastal touch.
+                </p>
+              )}
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-blue-50 rounded-lg p-4">
+                  <h3 class="font-semibold text-gray-900 mb-2">🐟 Fresh & Local</h3>
+                  <p class="text-gray-600 text-sm">
+                    Many of our {locationName} fish & chip shops source their fish locally, 
+                    ensuring the freshest possible ingredients for your meal.
+                  </p>
+                </div>
+                
+                <div class="bg-green-50 rounded-lg p-4">
+                  <h3 class="font-semibold text-gray-900 mb-2">⭐ Top-Rated</h3>
+                  <p class="text-gray-600 text-sm">
+                    Our listings include customer reviews and ratings to help you choose 
+                    the perfect chippy for your taste and budget.
+                  </p>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-lg p-4">
+                  <h3 class="font-semibold text-gray-900 mb-2">🕐 Opening Hours</h3>
+                  <p class="text-gray-600 text-sm">
+                    Find up-to-date opening hours, contact details, and location information 
+                    for all fish & chip shops in {locationName}.
+                  </p>
+                </div>
+                
+                <div class="bg-purple-50 rounded-lg p-4">
+                  <h3 class="font-semibold text-gray-900 mb-2">📍 Easy to Find</h3>
+                  <p class="text-gray-600 text-sm">
+                    Get directions, view addresses, and find the most convenient 
+                    fish & chip shop near you in {locationName}.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Own a Fish & Chip Shop in {locationName}?
+        </h2>
+        <p class="text-lg text-blue-200 mb-6 max-w-2xl mx-auto">
+          Get your business listed on ChipFindr and reach more hungry customers in {locationName} and beyond.
+        </p>
+        <a 
+          href="/claim-business" 
+          class="inline-block bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors"
+        >
+          Add Your Business
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+  }
+  .prose {
+    line-height: 1.7;
+  }
+</style>
+
+<script>
+  function sortBusinesses(sortType) {
+    console.log('Sorting by:', sortType);
+    
+    const grid = document.getElementById('businessGrid');
+    if (!grid) {
+      console.error('Grid not found');
+      return;
+    }
+    
+    const cards = Array.from(grid.querySelectorAll('.business-card'));
+    console.log('Found cards:', cards.length);
+    
+    if (cards.length === 0) {
+      console.error('No business cards found');
+      return;
+    }
+    
+    // Log current order before sorting
+    console.log('Before sorting:', cards.map(card => card.dataset.name));
+    
+    cards.sort((a, b) => {
+      const aRating = parseFloat(a.dataset.rating) || 0;
+      const bRating = parseFloat(b.dataset.rating) || 0;
+      const aReviews = parseInt(a.dataset.reviews) || 0;
+      const bReviews = parseInt(b.dataset.reviews) || 0;
+      const aName = (a.dataset.name || '').toLowerCase();
+      const bName = (b.dataset.name || '').toLowerCase();
+      
+      switch (sortType) {
+        case 'rating-high':
+          if (bRating !== aRating) return bRating - aRating;
+          return bReviews - aReviews;
+          
+        case 'rating-low':
+          if (aRating !== bRating) return aRating - bRating;
+          return aReviews - bReviews;
+          
+        case 'name-az':
+          return aName.localeCompare(bName);
+          
+        case 'name-za':
+          return bName.localeCompare(aName);
+          
+        case 'reviews-most':
+          return bReviews - aReviews;
+          
+        case 'reviews-least':
+          return aReviews - bReviews;
+          
+        default:
+          return 0;
+      }
+    });
+    
+    // Log new order after sorting
+    console.log('After sorting:', cards.map(card => card.dataset.name));
+    
+    // Clear the grid and re-add sorted cards
+    while (grid.firstChild) {
+      grid.removeChild(grid.firstChild);
+    }
+    
+    cards.forEach(card => {
+      grid.appendChild(card);
+    });
+    
+    console.log('Sorting complete');
+  }
+  
+  // Make sure the function is available globally
+  window.sortBusinesses = sortBusinesses;
+</script>

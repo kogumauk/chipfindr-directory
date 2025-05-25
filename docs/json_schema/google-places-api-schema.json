@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/google-places-api-result-schema.json",
+  "title": "Google Places API Result Entry Schema",
+  "description": "Schema for a single result entry from the Google Places API",
+  "type": "object",
+  "required": [
+    "name",
+    "id",
+    "formattedAddress",
+    "addressComponents",
+    "location",
+    "businessStatus",
+    "displayName",
+    "primaryTypeDisplayName",
+    "primaryType"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique identifier for the place in the format 'places/{place_id}'"
+    },
+    "id": {
+      "type": "string",
+      "description": "Unique place identifier"
+    },
+    "formattedAddress": {
+      "type": "string",
+      "description": "Human-readable address of the place"
+    },
+    "nationalPhoneNumber": {
+      "type": "string",
+      "description": "Phone number in national format",
+      "pattern": "^[0-9\\s\\-\\(\\)]+$"
+    },
+    "internationalPhoneNumber": {
+      "type": "string",
+      "description": "Phone number in international format",
+      "pattern": "^\\+[0-9\\s\\-\\(\\)]+$"
+    },
+    "addressComponents": {
+      "type": "array",
+      "description": "Array of address components",
+      "items": {
+        "type": "object",
+        "required": ["longText", "shortText", "types", "languageCode"],
+        "properties": {
+          "longText": {
+            "type": "string",
+            "description": "Full text of the address component"
+          },
+          "shortText": {
+            "type": "string",
+            "description": "Abbreviated text of the address component"
+          },
+          "types": {
+            "type": "array",
+            "description": "Array of component types",
+            "items": {
+              "type": "string",
+              "enum": [
+                "street_number",
+                "route",
+                "postal_town",
+                "administrative_area_level_1",
+                "administrative_area_level_2",
+                "country",
+                "postal_code",
+                "political",
+                "premise"
+              ]
+            },
+            "minItems": 1
+          },
+          "languageCode": {
+            "type": "string",
+            "description": "Language code for the component",
+            "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": ["latitude", "longitude"],
+      "description": "Geographic location of the place",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude coordinate",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude coordinate",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "rating": {
+      "type": "number",
+      "description": "Overall rating of the place",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "websiteUri": {
+      "type": "string",
+      "format": "uri",
+      "description": "Website URL of the place"
+    },
+    "adrFormatAddress": {
+      "type": "string",
+      "description": "Address formatted using the adr microformat"
+    },
+    "businessStatus": {
+      "type": "string",
+      "description": "Current operational status of the business",
+      "enum": [
+        "OPERATIONAL",
+        "CLOSED_TEMPORARILY",
+        "CLOSED_PERMANENTLY"
+      ]
+    },
+    "priceLevel": {
+      "type": "string",
+      "description": "Price level of the place",
+      "enum": [
+        "PRICE_LEVEL_FREE",
+        "PRICE_LEVEL_INEXPENSIVE",
+        "PRICE_LEVEL_MODERATE",
+        "PRICE_LEVEL_EXPENSIVE",
+        "PRICE_LEVEL_VERY_EXPENSIVE"
+      ]
+    },
+    "userRatingCount": {
+      "type": "integer",
+      "description": "Number of user ratings",
+      "minimum": 0
+    },
+    "displayName": {
+      "type": "object",
+      "required": ["text", "languageCode"],
+      "description": "Display name of the place",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Display name text"
+        },
+        "languageCode": {
+          "type": "string",
+          "description": "Language code for the display name",
+          "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+        }
+      }
+    },
+    "primaryTypeDisplayName": {
+      "type": "object",
+      "required": ["text", "languageCode"],
+      "description": "Human-readable primary type",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Primary type display text"
+        },
+        "languageCode": {
+          "type": "string",
+          "description": "Language code for the primary type",
+          "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+        }
+      }
+    },
+    "currentOpeningHours": {
+      "type": "object",
+      "required": ["openNow"],
+      "description": "Current opening hours information",
+      "properties": {
+        "openNow": {
+          "type": "boolean",
+          "description": "Whether the place is currently open"
+        },
+        "periods": {
+          "type": "array",
+          "description": "Array of opening periods",
+          "items": {
+            "type": "object",
+            "properties": {
+              "open": {
+                "type": "object",
+                "required": ["day", "hour", "minute"],
+                "properties": {
+                  "day": {
+                    "type": "integer",
+                    "description": "Day of the week (0=Sunday, 1=Monday, etc.)",
+                    "minimum": 0,
+                    "maximum": 6
+                  },
+                  "hour": {
+                    "type": "integer",
+                    "description": "Hour in 24-hour format",
+                    "minimum": 0,
+                    "maximum": 23
+                  },
+                  "minute": {
+                    "type": "integer",
+                    "description": "Minute",
+                    "minimum": 0,
+                    "maximum": 59
+                  },
+                  "truncated": {
+                    "type": "boolean",
+                    "description": "Whether the time is truncated"
+                  },
+                  "date": {
+                    "type": "object",
+                    "required": ["year", "month", "day"],
+                    "properties": {
+                      "year": {
+                        "type": "integer",
+                        "minimum": 2000
+                      },
+                      "month": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 12
+                      },
+                      "day": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 31
+                      }
+                    }
+                  }
+                }
+              },
+              "close": {
+                "type": "object",
+                "required": ["day", "hour", "minute"],
+                "properties": {
+                  "day": {
+                    "type": "integer",
+                    "description": "Day of the week (0=Sunday, 1=Monday, etc.)",
+                    "minimum": 0,
+                    "maximum": 6
+                  },
+                  "hour": {
+                    "type": "integer",
+                    "description": "Hour in 24-hour format",
+                    "minimum": 0,
+                    "maximum": 23
+                  },
+                  "minute": {
+                    "type": "integer",
+                    "description": "Minute",
+                    "minimum": 0,
+                    "maximum": 59
+                  },
+                  "truncated": {
+                    "type": "boolean",
+                    "description": "Whether the time is truncated"
+                  },
+                  "date": {
+                    "type": "object",
+                    "required": ["year", "month", "day"],
+                    "properties": {
+                      "year": {
+                        "type": "integer",
+                        "minimum": 2000
+                      },
+                      "month": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 12
+                      },
+                      "day": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 31
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "weekdayDescriptions": {
+          "type": "array",
+          "description": "Human-readable weekday descriptions",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "nextOpenTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Next time the place will be open"
+        },
+        "nextCloseTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Next time the place will close"
+        }
+      }
+    },
+    "primaryType": {
+      "type": "string",
+      "description": "Primary type identifier of the place",
+      "enum": [
+        "restaurant",
+        "meal_takeaway",
+        "seafood_restaurant",
+        "fast_food_restaurant"
+      ]
+    },
+    "priceRange": {
+      "type": "object",
+      "required": ["startPrice", "endPrice"],
+      "description": "Price range information",
+      "properties": {
+        "startPrice": {
+          "type": "object",
+          "required": ["currencyCode", "units"],
+          "description": "Starting price",
+          "properties": {
+            "currencyCode": {
+              "type": "string",
+              "description": "Currency code (ISO 4217)",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "units": {
+              "type": "string",
+              "description": "Price amount as string",
+              "pattern": "^[0-9]+$"
+            }
+          }
+        },
+        "endPrice": {
+          "type": "object",
+          "required": ["currencyCode", "units"],
+          "description": "Ending price",
+          "properties": {
+            "currencyCode": {
+              "type": "string",
+              "description": "Currency code (ISO 4217)",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "units": {
+              "type": "string",
+              "description": "Price amount as string",
+              "pattern": "^[0-9]+$"
+            }
+          }
+        }
+      }
+    }
+  }
+}
